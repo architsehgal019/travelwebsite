@@ -1,7 +1,72 @@
-*{
-	padding: 0px;
-	margin: 0px;
+.row{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
 }
-body{
-	background-color: black;
+.carousel-control-next-icon{
+	background-image: url('../images/icons/play-button.png') !important;
+}
+.carousel-control-previous-icon{
+	background-image: url('../images/icons/play-button.png') !important;
+}
+.bgpink{
+	background-color: #eb3558;
+}
+
+.bgblack{
+	background-color: #0b0a10;
+}
+@font-face{
+	font-family: avenirroman;
+	src: url('../fonts/avenir-roman.otf');
+}
+@font-face{
+	font-family: avenirbold;
+	src: url('../fonts/avenir-bold.otf');
+}
+@font-face{
+	font-family: begumbold;
+	src: url('../fonts/begum-bold.otf');
+}
+@font-face{
+	font-family: begumreg;
+	src: url('../fonts/begum-regular.otf');
+}
+.upper-header{
+	font-family: avenirbold;
+	font-size: 12px;
+}
+.logo{
+	width:16px;
+	height: 16px;
+}
+.site-logo{
+	width: 84px;
+	height: 60px;
+}
+.fa{
+	color: white !important;
+}
+.menu-items{
+	font-family: avenirroman !important;
+	color: white !important;
+	list-style:none;
+	font-size: 14px;
+}
+.textfield{
+	background-color: #1a1c1e !important;
+	border-color: #1a1c1e !important;
+}
+.honeymoon-logo{
+	width: 24px;
+	height: 24px;
+}
+.input-group-append{
+	background-color: #1a1c1e !important;
+}
+.main-header{
+	position: absolute;
+	z-index: 100;
+}
+.about-heading{
+	font-family: begumreg;
 }
