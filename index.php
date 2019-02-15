@@ -27,7 +27,7 @@
 			</div>
 
 			<!-- row for main header -->
-			<div class="row bgblack navbar-row text-white w-100 main-header">
+			<div class="row navbar-row text-white w-100 main-header">
 					<div class="col-lg-2 offset-lg-1 col-12 p-2 d-flex align-items-center justify-content-between">
 						<a href="#" class="ml-3"><img src="images/icons/logo.png" class="site-logo"></a>
 						<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#dropdownmenu" aria-controls="dropdownmenu" aria-expanded="false" aria-label="toggle navigation">
@@ -117,6 +117,7 @@
 			<div class="row bgblack p-5 text-center text-white d-flex justify-content-center">
 				<br>
 				<h1 class="about-heading">Popular Destinations</h1>
+				
 				<div id="carouselExample" class="carousel slide w-100" data-ride="carousel">
 					<div class="carousel-inner">
 	    				<div class="carousel-item active">

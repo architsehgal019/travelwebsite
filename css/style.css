@@ -18,6 +18,11 @@ body{
 .bgblack{
 	background-color: #0b0a10;
 }
+.scroll-fix{
+	position: fixed !important;
+	top: 0 !important;
+	background-color: rgba(11, 10, 16, 1) !important;
+}
 @font-face{
 	font-family: avenirroman;
 	src: url('../fonts/avenir-roman.otf');
@@ -69,6 +74,7 @@ body{
 .main-header{
 	position: absolute;
 	z-index: 100;
+	background-color: rgba(11, 10, 16, 0.7);
 }
 .about-heading{
 	font-family: begumreg;
