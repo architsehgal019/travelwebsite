@@ -5,11 +5,19 @@
 body{
 	background-color: #0b0a10;
 }
+a{
+	text-decoration: none !important;
+	color: white !important;
+}
 .carousel-control-next-icon{
 	background-image: url('../images/icons/play-button.png') !important;
+	width: 32px !important;
+	height: 32px !important;
 }
 .carousel-control-prev-icon{
 	background-image: url('../images/icons/play-prev.png') !important;
+	width: 32px !important;
+	height: 32px !important;
 }
 .bgpink{
 	background-color: #eb3558;
@@ -22,6 +30,9 @@ body{
 	position: fixed !important;
 	top: 0 !important;
 	background-color: rgba(11, 10, 16, 1) !important;
+}
+.fix-pos{
+	position: fixed;
 }
 @font-face{
 	font-family: avenirroman;
@@ -41,8 +52,10 @@ body{
 }
 .upper-header{
 	font-family: avenirbold;
-	font-size: 12px;
+	font-size: 14px;
+	z-index: 200;
 }
+
 .logo{
 	width:16px;
 	height: 16px;
@@ -65,16 +78,21 @@ body{
 	border-color: #1a1c1e !important;
 }
 .honeymoon-logo{
-	width: 24px;
-	height: 24px;
+	width: 108px;
 }
 .input-group-append{
 	background-color: #1a1c1e !important;
 }
 .main-header{
-	position: absolute;
+	position: fixed;
 	z-index: 100;
-	background-color: rgba(11, 10, 16, 0.7);
+	top: 5%;
+	background-color: rgba(11, 10, 16, 0.8);
+}
+@media only screen and (max-width: 600px) {
+  .main-header{
+    top: 3% !important;
+  }
 }
 .about-heading{
 	font-family: begumreg;
@@ -95,7 +113,7 @@ p{
 	margin-right: 10%;
 }
 .destination{
-	height: 300px;
+	height: 265px;
 	position: relative;
 }
 .destination img{
@@ -133,4 +151,65 @@ p{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+.carousel-indicators li{
+	width: 50px !important;
+	height: 50px !important;
+}
+.carousel-indicators img{
+	width: 100% !important;
+	height: 100% !important;
+}
+.carousel-indicators{
+	bottom:1px !important;
+	position: relative !important;
+}
+.carousel-indicators .row div{
+	height: 8%;
+}
+.parallax{
+	background-image: url('../images/sliderimg1.jpg');
+	min-height: 800px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.element-center{
+	margin: 0 auto !important;
+	margin-top: 6px !important;
+}
+.contact-submit{
+    font-size: 30px;
+}
+input.transparent-input{
+       background-color:rgba(0,0,0,0) !important;
+       border:1px solid white;
+}
+.bottom-logo{
+	width: 150px;
+	height: 100px;
+}
+.contact-list .list-item{
+    display: inline-block;
+}
+.list-item{
+    color: aliceblue;
+    font-size:16px;
+}
+.contact-icons{
+    height: 5%;
+    width:5%;
+}
+.icon-detail{
+    font-size: 20px;
+    color: antiquewhite;
+}
+.social-icon{
+    height: 5%;
+    width:12%;
+/*    margin-left: 10%;*/
+}
+.social-upper{
+    height: 25%;
 }
