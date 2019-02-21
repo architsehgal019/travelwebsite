@@ -20,7 +20,8 @@ a{
 	height: 32px !important;
 }
 .bgpink{
-	background-color: #eb3558;
+/*	background-color: #eb3558;*/
+    background-color: rgba(0,0,0,0.5);
 }
 
 .bgblack{
@@ -29,10 +30,12 @@ a{
 .scroll-fix{
 	position: fixed !important;
 	top: 0 !important;
-	background-color: rgba(11, 10, 16, 1) !important;
+	background-color: rgba(0,0,0,0.5) !important;
+    transition: 0.7s;
 }
 .fix-pos{
 	position: fixed;
+    transition: 0.7s;
 }
 @font-face{
 	font-family: avenirroman;
@@ -61,9 +64,10 @@ a{
 	height: 16px;
 }
 .site-logo{
-	width: 84px;
-	height: 60px;
+	width: 120px;
+	height: 80px;
 }
+
 .fa{
 	color: white !important;
 }
@@ -87,7 +91,7 @@ a{
 	position: fixed;
 	z-index: 100;
 	top: 5%;
-	background-color: rgba(11, 10, 16, 0.8);
+	background-color: transparent;
 }
 @media only screen and (max-width: 600px) {
   .main-header{
@@ -212,4 +216,8 @@ input.transparent-input{
 }
 .social-upper{
     height: 25%;
+}
+.contact-icons-top{
+    height: 18px;
+    width: 18px;
 }

@@ -12,6 +12,37 @@
 		<div class="fluid-container">	
 			<!-- row for upper header -->
 			<div class="row bgpink text-white upper-header fix-pos w-100">
+
+            <div class="col-5 p-2 text-center d-flex align-items-center justify-content-center">
+<!--					<a href="tel:+91-7303969097">+91-7303969097</a>-->
+				</div>
+           
+           <div class="col-7 p-2 text-center d-flex align-items-center justify-content-center">
+
+              
+<!--               <a href="#"><img src="images/icons/fblogo.png" class="logo"></a>-->
+               <a href="#"><img src="images/icons/fblogo.png" class="logo"></a>
+<!--               <a href="#"><img src="images/icons/instalogo.png" class="logo ml-4"></a>-->
+				<a href="#"><img src="images/icons/instalogo.png" class="logo ml-4"></a>
+				<a href="#"><img src="images/icons/twitterlogo.png" class="logo ml-4"></a>
+               <a href="tel:+91-7303969097" class="ml-4 "><img src="images/icons/contactlogo.png" class="contact-icons-top mr-2">+91-7303969097</a>
+               <a href="mailto:travelwithjatin@gmail.com" class="ml-4"><img src="images/icons/contactvlogo.png" class="contact-icons-top mr-2">travelwithjatin@gmail.com</a>
+               <!--
+                
+					<ul class="nav-menu">
+					    <li class="upper-items">ABOUT</li>
+					    <li class="upper-items"><a href="#"><img src="images/icons/fblogo.png" class="logo"></a></li>
+					    <li class="upper-items"></li>
+					    <li class="upper-items"></li>
+					    <li class="upper-items"></li>
+					    <li class="upper-items"></li>
+					    <li class="upper-items"></li>
+					</ul>
+-->
+            </div>
+            
+            
+            <!--
 				<div class="col-4 p-2 text-center d-flex align-items-center justify-content-center">
 					<a href="tel:+91-7303969097">+91-7303969097</a>
 				</div>
@@ -23,6 +54,7 @@
 					<a href="#"><img src="images/icons/instalogo.png" class="logo ml-4"></a>
 					<a href="#"><img src="images/icons/twitterlogo.png" class="logo ml-4"></a>
 				</div>
+-->
 			</div>
 
 			<!-- row for main header -->
