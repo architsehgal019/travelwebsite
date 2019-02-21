@@ -55,12 +55,7 @@
 						</nav>
 					</div>
 					<div class="col-lg-3 col-12 mb-1 d-flex align-items-center justify-content-center">
-						<div class="input-group">
-							<input type="text" class="form-control textfield" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
-							<div class="input-group-append">
-						    	<button class="btn" type="button"><i class="fa fa-search"></i></button>
-						  	</div>
-						</div>
+						<button class="btn" type="button"><i class="fa fa-search"></i></button>
 						<a href="#"><img src="images/icons/honeymoonnewlogo.png" class="honeymoon-logo"></a>
 					</div>
 			</div>
