@@ -167,94 +167,94 @@
 			<hr class="divider">
 
 			<!-- popular destinations section -->
-			<div class="row bgblack p-5 text-center text-white d-flex justify-content-center">
+			<div class="row bgblack text-white d-flex justify-content-center">
 				<br>
-				<h2 class="about-heading">Popular Destinations</h2>
+				<h2 class="about-heading mt-5">Popular Destinations</h2>
 				
-				<div id="carouselExample" class="carousel slide w-100" data-ride="carousel">
+				<div id="carouselExample" class="carousel slide w-100 mt-5" data-ride="carousel">
 					<div class="carousel-inner">
 	    				<div class="carousel-item active">
-	      					<div class="row p-5">
+	      					<div class="row">
 	      						<div class="col-4 destination">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Gujarat</div>
-	      							</div>
-	      						</div>
-	      						<div class="col-4 destination">
-	      							<img src="images/travel.jpg">
-	      							<div class="overlay">
-	      								<div class="text">Gujarat</div>
+	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Gujarat</div>
+	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination mt-2">
+	      						<div class="col-4 destination">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Gujarat</div>
+	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination mt-2">
+	      						<div class="col-4 destination mt-1">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Gujarat</div>
+	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination mt-2">
+	      						<div class="col-4 destination mt-1">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Gujarat</div>
+	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      							</div>
+	      						</div>
+	      						<div class="col-4 destination mt-1">
+	      							<img src="images/travel.jpg">
+	      							<div class="overlay">
+	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
 	      					</div>
 	    				</div>
 	    				<div class="carousel-item">
-	      					<div class="row p-5">
+	      					<div class="row">
 	      						<div class="col-4 destination">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Gujarat</div>
-	      							</div>
-	      						</div>
-	      						<div class="col-4 destination">
-	      							<img src="images/travel.jpg">
-	      							<div class="overlay">
-	      								<div class="text">Gujarat</div>
+	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Gujarat</div>
+	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination mt-2">
+	      						<div class="col-4 destination">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Gujarat</div>
+	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination mt-2">
+	      						<div class="col-4 destination mt-1">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Gujarat</div>
+	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination mt-2">
+	      						<div class="col-4 destination mt-1">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Gujarat</div>
+	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      							</div>
+	      						</div>
+	      						<div class="col-4 destination mt-1">
+	      							<img src="images/travel.jpg">
+	      							<div class="overlay">
+	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
 	      					</div>
 	    				</div>
   					</div>
-  					<div class="row d-flex align-items-center justify-content-center">
+  					<div class="row d-flex mt-5 align-items-center justify-content-center">
   						<a href="#carouselExample" role="button" data-slide="prev">
 	    					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 	    					<span class="sr-only">Previous</span>
@@ -266,15 +266,18 @@
   					</div>
 				</div>
 			</div>
-			<hr class="divider">
+			<hr class="divider mt-5">
 
 			<!-- discount banner section --> 
-			<div class="row w-100 mt-5">
-                <div class="col-12 w-100 p-0">
+			<div class="row w-100 text-white d-flex justify-content-center">
+                <br>
+                <h2 class="about-heading mt-5">Special Offers</h2>
+                <div class="col-12 w-100 p-0 mt-5">
                     <img src="images/discount.jpg" alt="Discount" class="w-100">
                 </div>
             </div>
-
+            <hr class="divider mt-5">
+            
             <!-- google reviews section -->
             <div class="row bgblack p-5 text-center text-white d-flex justify-content-center mt-5">
 				<br>
