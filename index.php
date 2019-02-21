@@ -6,55 +6,24 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<!-- link for css stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>Kahi bhi ghoomlo</title>
+		<title>Kahin bhi ghoomlo</title>
 	</head>
 	<body>
 		<div class="fluid-container">	
 			<!-- row for upper header -->
 			<div class="row bgpink text-white upper-header fix-pos w-100">
-
-            <div class="col-5 p-2 text-center d-flex align-items-center justify-content-center">
-<!--					<a href="tel:+91-7303969097">+91-7303969097</a>-->
-				</div>
-           
-           <div class="col-7 p-2 text-center d-flex align-items-center justify-content-center">
-
-              
-<!--               <a href="#"><img src="images/icons/fblogo.png" class="logo"></a>-->
-               <a href="#"><img src="images/icons/fblogo.png" class="logo"></a>
-<!--               <a href="#"><img src="images/icons/instalogo.png" class="logo ml-4"></a>-->
-				<a href="#"><img src="images/icons/instalogo.png" class="logo ml-4"></a>
-				<a href="#"><img src="images/icons/twitterlogo.png" class="logo ml-4"></a>
-               <a href="tel:+91-7303969097" class="ml-4 "><img src="images/icons/contactlogo.png" class="contact-icons-top mr-2">+91-7303969097</a>
-               <a href="mailto:travelwithjatin@gmail.com" class="ml-4"><img src="images/icons/contactvlogo.png" class="contact-icons-top mr-2">travelwithjatin@gmail.com</a>
-               <!--
-                
-					<ul class="nav-menu">
-					    <li class="upper-items">ABOUT</li>
-					    <li class="upper-items"><a href="#"><img src="images/icons/fblogo.png" class="logo"></a></li>
-					    <li class="upper-items"></li>
-					    <li class="upper-items"></li>
-					    <li class="upper-items"></li>
-					    <li class="upper-items"></li>
-					    <li class="upper-items"></li>
-					</ul>
--->
-            </div>
-            
-            
-            <!--
-				<div class="col-4 p-2 text-center d-flex align-items-center justify-content-center">
-					<a href="tel:+91-7303969097">+91-7303969097</a>
-				</div>
-				<div class="col-4 p-2 text-center d-flex align-items-center justify-content-center">
-					<a href="mailto:travelwithjatin@gmail.com">travelwithjatin@gmail.com</a>
-				</div>
-				<div class="col-4 p-2 text-center">
-					<a href="#"><img src="images/icons/fblogo.png" class="logo"></a>
-					<a href="#"><img src="images/icons/instalogo.png" class="logo ml-4"></a>
-					<a href="#"><img src="images/icons/twitterlogo.png" class="logo ml-4"></a>
-				</div>
--->
+	   	        <div class="col-12 col-lg-6 offset-lg-6 p-2 text-center d-flex align-items-center justify-content-center">
+	   	        	<div class="upper-header-logo p-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+	   	        	<div class="upper-header-logo p-1 ml-3"><a href="#"><i class="fab fa-youtube"></i></a></div>
+	   	        	<div class="upper-header-logo p-1 ml-3"><a href="#"><i class="fab fa-instagram"></i></a></div>
+	   	        	<div class="upper-header-logo p-1 ml-3"><a href="#"><i class="fab fa-twitter"></i></a></div>
+	   	        	<div class="upper-header-contact p-1 ml-3 pl-2 pr-2">
+	   	        		<a href="tel:+91-7303969097"><i class="fa fa-phone mr-2"></i>+91-7303969097</a>
+	   	        	</div>
+	   	        	<div class="upper-header-contact p-1 ml-3 pl-2 pr-2">
+	   	        		<a href="mailto:travelwithjatin@gmail.com"><i class="fa fa-envelope mr-2"></i>travelwithjatin@gmail.com</a>
+	   	        	</div>
+	            </div>
 			</div>
 
 			<!-- row for main header -->
