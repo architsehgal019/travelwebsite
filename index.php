@@ -182,31 +182,31 @@
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination">
-	      							<img src="images/travel.jpg">
+	      							<img src="images/travel1.jpg">
 	      							<div class="overlay">
 	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination">
-	      							<img src="images/travel.jpg">
+	      							<img src="images/travel3.jpg">
 	      							<div class="overlay">
 	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination mt-1">
-	      							<img src="images/travel.jpg">
+	      							<img src="images/travel4.jpg">
 	      							<div class="overlay">
 	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination mt-1">
-	      							<img src="images/travel.jpg">
+	      							<img src="images/travel5.jpg">
 	      							<div class="overlay">
 	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination mt-1">
-	      							<img src="images/travel.jpg">
+	      							<img src="images/travel6.jpg">
 	      							<div class="overlay">
 	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
@@ -222,31 +222,31 @@
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination">
-	      							<img src="images/travel.jpg">
+	      							<img src="images/travel1.jpg">
 	      							<div class="overlay">
 	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination">
-	      							<img src="images/travel.jpg">
+	      							<img src="images/travel3.jpg">
 	      							<div class="overlay">
 	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination mt-1">
-	      							<img src="images/travel.jpg">
+	      							<img src="images/travel4.jpg">
 	      							<div class="overlay">
 	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination mt-1">
-	      							<img src="images/travel.jpg">
+	      							<img src="images/travel5.jpg">
 	      							<div class="overlay">
 	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination mt-1">
-	      							<img src="images/travel.jpg">
+	      							<img src="images/travel6.jpg">
 	      							<div class="overlay">
 	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
 	      							</div>
@@ -277,7 +277,7 @@
                 </div>
             </div>
             <hr class="divider mt-5">
-            
+
             <!-- google reviews section -->
             <div class="row bgblack p-5 text-center text-white d-flex justify-content-center mt-5">
 				<br>
