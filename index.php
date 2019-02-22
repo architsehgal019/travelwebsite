@@ -13,6 +13,9 @@
 			<!-- row for upper header -->
 			<div class="row bgpink text-white upper-header fix-pos w-100">
 	   	        <div class="col-12 col-lg-6 offset-lg-6 p-2 text-center d-flex align-items-center justify-content-center">
+	   	        	<div class="about-us-link p-1 mr-3 pl-2 pr-2">
+	   	        		<a href="">ABOUT US</a>
+	   	        	</div>
 	   	        	<div class="upper-header-logo p-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
 	   	        	<div class="upper-header-logo p-1 ml-3"><a href="#"><i class="fab fa-youtube"></i></a></div>
 	   	        	<div class="upper-header-logo p-1 ml-3"><a href="#"><i class="fab fa-instagram"></i></a></div>
@@ -20,7 +23,7 @@
 	   	        	<div class="upper-header-contact p-1 ml-3 pl-2 pr-2">
 	   	        		<a href="tel:+91-7303969097"><i class="fa fa-phone mr-2"></i>+91-7303969097</a>
 	   	        	</div>
-	   	        	<div class="upper-header-contact p-1 ml-3 pl-2 pr-2">
+	   	        	<div class="upper-header-contact p-1 ml-3 pl-2 pr-2 mr-3">
 	   	        		<a href="mailto:travelwithjatin@gmail.com"><i class="fa fa-envelope mr-2"></i>travelwithjatin@gmail.com</a>
 	   	        	</div>
 	            </div>
@@ -34,12 +37,12 @@
 							<i class="fa fa-bars"></i>
 						</button>
 					</div>
-					<div class="col-lg-6 col-12 d-flex align-items-center justify-content-center">
-						<nav class="navbar navbar-expand-lg">
+					<div class="col-lg-9 col-12 d-flex align-items-right justify-content-end pr-5">
+						<nav class="navbar navbar-expand-lg float-right">
 							<div class="collapse navbar-collapse mx-auto" id="dropdownmenu">
 								<ul class="navbar-nav mx-auto text-uppercase main-ul">
 									<li class="nav-item mx-3">
-										<a href="#" class="menu-items">Destinations</a>
+                                        <a href="#" class="menu-items">Destinations<i class="fa fa-chevron-down ml-2"></i></a>
 									</li>
 									<li class="nav-item mx-3">
 										<a href="#" class="menu-items">team</a>
@@ -48,16 +51,23 @@
 										<a href="#" class="menu-items">testimonial</a>
 									</li>
 									<li class="nav-item mx-3">
+										<a href="#" class="menu-items">BLOGS</a>
+									</li>
+									<li class="nav-item mx-3">
 										<a href="#" class="menu-items">pay</a>
 									</li>
 								</ul>
+								<button class="btn" type="button"><i class="fa fa-search"></i></button>
+<!--						<a href="#"><img src="images/icons/honeymoonnewlogo.png" class="honeymoon-logo"></a>-->
 							</div>
 						</nav>
 					</div>
-					<div class="col-lg-3 col-12 mb-1 d-flex align-items-center justify-content-center">
+<!--
+					<div class="col-lg-2 col-12 mb-1 d-flex align-items-center justify-content-end">
 						<button class="btn" type="button"><i class="fa fa-search"></i></button>
 						<a href="#"><img src="images/icons/honeymoonnewlogo.png" class="honeymoon-logo"></a>
 					</div>
+-->
 			</div>
 			
 			<!-- image slider -->
