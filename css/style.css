@@ -4,6 +4,7 @@
 }
 body{
 	background-color: #0b0a10;
+        font-family: 'Raleway','Helvetica Neue',Arial,Verdana,sans-serif;
 }
 a{
 	text-decoration: none !important;
@@ -26,6 +27,7 @@ a{
 
 .bgblack{
 	background-color: #0b0a10;
+    
 }
 .scroll-fix{
 	position: fixed !important;
@@ -53,21 +55,43 @@ a{
 	font-family: begumreg;
 	src: url('../fonts/begum-regular.otf');
 }
+.about-us-link{
+        font-family: 'Raleway','Helvetica Neue',Arial,Verdana,sans-serif;
+    font-size:12px;
+}
 .upper-header{
 	font-family: avenirbold;
-	font-size: 14px;
+	font-size: 11px;
 	z-index: 200;
 }
+/*
+.upper-header>div>div{
+    height: 23px;
+}
+*/
 
 .upper-header-logo{
 	width: 22px;
 	height: 22px;
 	background-color: white;
-	border-radius: 50%;
+	border-radius: 60%;
+    background-position: 0 0;
+    
+     
+}
+
+
+.upper-header-logo>a{
+    font-size:14px;
+}
+.upper-header-logo:hover{
+    background-color: pink;
+    background-position: 0 -70px;
 }
 .upper-header-contact{
 	background-color: white;
 	border-radius: 16px;
+    font-size:12px;
 }
 .upper-header-contact a{
 	color: black !important;
@@ -96,14 +120,20 @@ a{
 	font-family: avenirroman !important;
 	color: white !important;
 	list-style:none;
-	font-size: 14px;
+	font-size: 13px;
+    transition:2s;
+    font-weight: 700;
+}
+.nav-item:hover{
+    border-bottom: 2.2px solid white;
 }
 .textfield{
 	background-color: #1a1c1e !important;
 	border-color: #1a1c1e !important;
 }
 .honeymoon-logo{
-	width: 108px;
+	width: 158px;
+    height: 80px;
 }
 .input-group-append{
 	background-color: #1a1c1e !important;
@@ -120,7 +150,8 @@ a{
   }
 }
 .about-heading{
-	font-family: begumreg;
+	    font-family: 'Raleway','Helvetica Neue',Arial,Verdana,sans-serif;
+    text-transform: uppercase;
 }
 p{
 	font-size: 16px !important;
