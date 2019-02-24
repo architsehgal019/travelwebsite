@@ -152,37 +152,73 @@
 	      						<div class="col-4 destination">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      								<div class="w-100 h-100 pl-3 pt-1">
+	      									<div class="text">
+	      										Kutch
+	      										<br>
+	      										<span class="subtext">Gujarat</span>
+	      									</div>
+	      								</div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination">
 	      							<img src="images/travel1.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      								<div class="w-100 h-100 pl-3 pt-1">
+	      									<div class="text">
+	      										Anjuna Beach
+	      										<br>
+	      										<span class="subtext">Goa</span>
+	      									</div>
+	      								</div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination">
 	      							<img src="images/travel3.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      								<div class="w-100 h-100 pl-3 pt-1">
+	      									<div class="text">
+	      										Udaipur
+	      										<br>
+	      										<span class="subtext">Rajasthan</span>
+	      									</div>
+	      								</div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination mt-1">
 	      							<img src="images/travel4.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      								<div class="w-100 h-100 pl-3 pt-1">
+	      									<div class="text">
+	      										Manali
+	      										<br>
+	      										<span class="subtext">Himachal Pradesh</span>
+	      									</div>
+	      								</div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination mt-1">
 	      							<img src="images/travel5.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      								<div class="w-100 h-100 pl-3 pt-1">
+	      									<div class="text">
+	      										Munnar
+	      										<br>
+	      										<span class="subtext">Kerala</span>
+	      									</div>
+	      								</div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination mt-1">
 	      							<img src="images/travel6.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      								<div class="w-100 h-100 pl-3 pt-1">
+	      									<div class="text">
+	      										Rameswaram
+	      										<br>
+	      										<span class="subtext">Tamil Nadu</span>
+	      									</div>
+	      								</div>
 	      							</div>
 	      						</div>
 	      					</div>
@@ -192,37 +228,73 @@
 	      						<div class="col-4 destination">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      								<div class="w-100 h-100 pl-3 pt-1">
+	      									<div class="text">
+	      										Kutch
+	      										<br>
+	      										<span class="subtext">Gujarat</span>
+	      									</div>
+	      								</div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination">
 	      							<img src="images/travel1.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      								<div class="w-100 h-100 pl-3 pt-1">
+	      									<div class="text">
+	      										Anjuna Beach
+	      										<br>
+	      										<span class="subtext">Goa</span>
+	      									</div>
+	      								</div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination">
 	      							<img src="images/travel3.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      								<div class="w-100 h-100 pl-3 pt-1">
+	      									<div class="text">
+	      										Udaipur
+	      										<br>
+	      										<span class="subtext">Rajasthan</span>
+	      									</div>
+	      								</div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination mt-1">
 	      							<img src="images/travel4.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      								<div class="w-100 h-100 pl-3 pt-1">
+	      									<div class="text">
+	      										Manali
+	      										<br>
+	      										<span class="subtext">Himachal Pradesh</span>
+	      									</div>
+	      								</div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination mt-1">
 	      							<img src="images/travel5.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      								<div class="w-100 h-100 pl-3 pt-1">
+	      									<div class="text">
+	      										Munnar
+	      										<br>
+	      										<span class="subtext">Kerala</span>
+	      									</div>
+	      								</div>
 	      							</div>
 	      						</div>
 	      						<div class="col-4 destination mt-1">
 	      							<img src="images/travel6.jpg">
 	      							<div class="overlay">
-	      								<div class="text">Jodhpur<br><span class="subtext">Rajasthan</span></div>
+	      								<div class="w-100 h-100 pl-3 pt-1">
+	      									<div class="text">
+	      										Rameswaram
+	      										<br>
+	      										<span class="subtext">Tamil Nadu</span>
+	      									</div>
+	      								</div>
 	      							</div>
 	      						</div>
 	      					</div>

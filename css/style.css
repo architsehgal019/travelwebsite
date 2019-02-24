@@ -196,23 +196,15 @@ p{
 }
 .text {
   color: white;
-  font-size: 16px;
-  position: absolute;
-  top: 50%;
-  left: 13%;
+  font-size: 20px;
   font-family: 'Raleway','Helvetica Neue',Arial,Verdana,sans-serif;
   text-transform: capitalize;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 500;
   letter-spacing: 1px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 .subtext{
 	font-style: italic;
-	font-size: 14px;
-	font-weight: initial;
+	font-size: 12px;
 	text-align: left;
 	text-transform: uppercase;
 
