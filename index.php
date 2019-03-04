@@ -1,3 +1,10 @@
+<?php session_start();
+error_reporting(0);
+include('includes/config.php');
+
+ ?>
+
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -9,29 +16,14 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<!-- link for css stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
 		<title>Kahin bhi ghoomlo</title>
 	</head>
 	<body>
 		<div class="fluid-container">	
 			<!-- row for upper header -->
-			<div class="row bgpink text-white upper-header fix-pos w-100">
-	   	        <div class="col-12 col-lg-6 offset-lg-6 p-2 text-center d-flex align-items-center justify-content-center">
-	   	        	<div class="about-us-link p-1 mr-3 pl-2 pr-2">
-	   	        		<a href="">ABOUT US</a>
-	   	        	</div>
-	   	        	<div class="upper-header-logo p-1"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
-	   	        	<div class="upper-header-logo p-1 ml-3"><a href="#"><i class="fab fa-youtube"></i></a></div>
-	   	        	<div class="upper-header-logo p-1 ml-3"><a href="#"><i class="fab fa-instagram"></i></a></div>
-	   	        	<div class="upper-header-logo p-1 ml-3"><a href="#"><i class="fab fa-twitter"></i></a></div>
-	   	        	<div class="upper-header-contact p-1 ml-3 pl-2 pr-2">
-	   	        		<a href="tel:+91-7303969097"><i class="fa fa-phone mr-2"></i>+91-7303969097</a>
-	   	        	</div>
-	   	        	<div class="upper-header-contact p-1 ml-3 pl-2 pr-2 mr-3">
-	   	        		<a href="mailto:travelwithjatin@gmail.com"><i class="fa fa-envelope mr-2"></i>travelwithjatin@gmail.com</a>
-	   	        	</div>
-	            </div>
-			</div>
 
+<<<<<<< HEAD
 			<!-- row for main header -->
 			<div class="row navbar-row text-white w-100 main-header">
 					<div class="col-lg-2 offset-lg-1 col-12 p-2 d-flex align-items-center justify-content-between">
@@ -66,6 +58,13 @@
 					</div>
 			</div>
 			
+=======
+			<?php 
+                include('includes/header.php');
+
+            ?>
+
+>>>>>>> 64d192e4a45e583d81db2b77ff7b6251d4bc39da
 			<!-- image slider -->
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   				<div class="carousel-inner">
@@ -393,73 +392,18 @@
             <div  class = "mt-5" style="width: 100%"><iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=District%20Center%20Janakpuri%2CDelhi+(Kahi%20Bhi%20Ghoomlo)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Plot a route map</a></iframe></div><br />
 
             <!-- footer section -->
-            <div class="row d-flex bg-black text-center text-white align-items-center justify-content-center mt-5">
-            	<div class="col-3">
-              		<img src="images/icons/logo.png" class="bottom-logo">
-          		</div>
-          		<div class="col-6 text-center">
-		            <div class="row">
-		                <div class="col-12 ">
-		                    <div class="contact-list float-left">
-		                        <a href="#" class="list-item">About Us</a>
-		                        <a href="#" class="list-item ml-3 mr-3">|</a>
-		                        <a href="#" class="list-item">Why Us?</a>
-		                        <a href="#" class="list-item ml-3 mr-3">|</a>
-		                        <a href="#" class="list-item">Gallery</a>
-		                        <a href="#" class="list-item ml-3 mr-3">|</a>
-		                        <a href="#" class="list-item">T&C</a>
-		                        <a href="#" class="list-item ml-3 mr-3">|</a>
-		                        <a href="#" class="list-item">Contact-Us</a>
-		                    </div>  
-		                </div>
-		            </div>
-		            <div class="row">
-		                <div class="col-12 mt-4"> 
-		                  	<img src="images/icons/contactvlogo.png" class="contact-icons float-left">
-		                    <span class="float-left ml-3 icon-detail" style="margin-top: 1%;font-size: 16px;color: white;">travelwithjatin@gmail.com</span>
-		                </div>
-		            </div>
-		            <div class="row">
-		                <div class="col-12 mt-4">        
-		                  	<img src="images/icons/contactlogo.png" class="contact-icons float-left">
-		                    <span class="float-left ml-3 icon-detail" style="margin-top: 1%;font-size: 16px;color: white;">+91-7303969097</span>
-		                </div>
-		            </div>
-		            <div class="row">
-		                 <div class="col-12 mt-4">
-		                  	<img src="images/icons/address.png" class="contact-icons float-left">
-		                    <span class="float-left ml-3 icon-detail" style="margin-top: 1%;font-size: 16px;color: white;">506 B&c, Jaina Tower II,
-		                     District Centre Janakpuri, New Delhi 110085</span>
-		                </div>
-		            </div>
-          		</div>
-           
-	           	<div class="col-3">
-	               	<div class="row">
-	                   	<div class="col-12 social-upper"></div>
-	                   	<div class="col-12">
-	                       <img src="images/icons/fblogo.png" class="social-icon float-left">
-	                       <img src="images/icons/instalogo.png" class="social-icon float-left ml-5">
-	                       <img src="images/icons/twitterlogo.png" class="social-icon float-left ml-5">
-	                   	</div>
-	               </div>
-	           </div>
-         	</div>
-         
-          	<hr class="divider mt-3">
-          
-          	<div class="row d-flex text-center text-white align-items-center justify-content-center mt-3">
-              	<span>
-             		&copy; 2018 Kahin Bhi Ghoomlo. All rights reserved
-              	</span>  
-          	</div>
             
+            <?php 
+                include('includes/footer.php');
+
+            ?>
 
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	
