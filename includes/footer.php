@@ -1,8 +1,8 @@
 <div class="row d-flex bg-black text-center text-white align-items-center justify-content-center mt-5">
-            	<div class="col-3">
+            	<div class="col-lg-3 col-12">
               		<img src="images/icons/logo.png" class="bottom-logo">
           		</div>
-          		<div class="col-6 text-center">
+          		<div class="col-lg-6 col-12 text-center">
 		            <div class="row">
 		                <div class="col-12 ">
 		                    <div class="contact-list float-left">
@@ -39,7 +39,7 @@
 		            </div>
           		</div>
            
-	           	<div class="col-3">
+	           	<div class="col-lg-3 col-12">
 	               	<div class="row">
 	                   	<div class="col-12 social-upper"></div>
 	                   	<div class="col-12">

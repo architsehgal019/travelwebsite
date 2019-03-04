@@ -60,7 +60,7 @@ include('includes/config.php');
 					<p>
 						In simple words, "Your dream it & we picturize it in reality". As we stand only one thing.
 					</p>
-					<button class="btn btnsubmit float-right" type="submit">Read More</button>
+					<button class="btn btnsubmit float-right pl-4 pr-4" type="submit">Read More</button>
 				</div>
 				<div class="col-12 col-lg-6 mt-4 p-5">
 					<div id="carouselIndicators" class="carousel slide" data-ride="carousel" style="height: 50%;">
@@ -105,7 +105,7 @@ include('includes/config.php');
 					<div class="carousel-inner">
 	    				<div class="carousel-item active">
 	      					<div class="row">
-	      						<div class="col-4 destination">
+	      						<div class="col-lg-4 col-6 destination">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
 	      								<div class="w-100 h-100 pl-3 pt-1">
@@ -117,7 +117,7 @@ include('includes/config.php');
 	      								</div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination">
+	      						<div class="col-lg-4 col-6 destination">
 	      							<img src="images/travel1.jpg">
 	      							<div class="overlay">
 	      								<div class="w-100 h-100 pl-3 pt-1">
@@ -129,7 +129,7 @@ include('includes/config.php');
 	      								</div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination">
+	      						<div class="col-lg-4 col-6 destination">
 	      							<img src="images/travel3.jpg">
 	      							<div class="overlay">
 	      								<div class="w-100 h-100 pl-3 pt-1">
@@ -141,7 +141,7 @@ include('includes/config.php');
 	      								</div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination mt-1">
+	      						<div class="col-lg-4 col-6 destination mt-1">
 	      							<img src="images/travel4.jpg">
 	      							<div class="overlay">
 	      								<div class="w-100 h-100 pl-3 pt-1">
@@ -153,7 +153,7 @@ include('includes/config.php');
 	      								</div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination mt-1">
+	      						<div class="col-lg-4 col-6 destination mt-1">
 	      							<img src="images/travel5.jpg">
 	      							<div class="overlay">
 	      								<div class="w-100 h-100 pl-3 pt-1">
@@ -165,7 +165,7 @@ include('includes/config.php');
 	      								</div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination mt-1">
+	      						<div class="col-lg-4 col-6 destination mt-1">
 	      							<img src="images/travel6.jpg">
 	      							<div class="overlay">
 	      								<div class="w-100 h-100 pl-3 pt-1">
@@ -181,7 +181,7 @@ include('includes/config.php');
 	    				</div>
 	    				<div class="carousel-item">
 	      					<div class="row">
-	      						<div class="col-4 destination">
+	      						<div class="col-lg-4 col-6 destination">
 	      							<img src="images/travel.jpg">
 	      							<div class="overlay">
 	      								<div class="w-100 h-100 pl-3 pt-1">
@@ -193,7 +193,7 @@ include('includes/config.php');
 	      								</div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination">
+	      						<div class="col-lg-4 col-6 destination">
 	      							<img src="images/travel1.jpg">
 	      							<div class="overlay">
 	      								<div class="w-100 h-100 pl-3 pt-1">
@@ -205,7 +205,7 @@ include('includes/config.php');
 	      								</div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination">
+	      						<div class="col-lg-4 col-6 destination">
 	      							<img src="images/travel3.jpg">
 	      							<div class="overlay">
 	      								<div class="w-100 h-100 pl-3 pt-1">
@@ -217,7 +217,7 @@ include('includes/config.php');
 	      								</div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination mt-1">
+	      						<div class="col-lg-4 col-6 destination mt-1">
 	      							<img src="images/travel4.jpg">
 	      							<div class="overlay">
 	      								<div class="w-100 h-100 pl-3 pt-1">
@@ -229,7 +229,7 @@ include('includes/config.php');
 	      								</div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination mt-1">
+	      						<div class="col-lg-4 col-6 destination mt-1">
 	      							<img src="images/travel5.jpg">
 	      							<div class="overlay">
 	      								<div class="w-100 h-100 pl-3 pt-1">
@@ -241,7 +241,7 @@ include('includes/config.php');
 	      								</div>
 	      							</div>
 	      						</div>
-	      						<div class="col-4 destination mt-1">
+	      						<div class="col-lg-4 col-6 destination mt-1">
 	      							<img src="images/travel6.jpg">
 	      							<div class="overlay">
 	      								<div class="w-100 h-100 pl-3 pt-1">
@@ -338,14 +338,14 @@ include('includes/config.php');
 	                </h2>
             	</div>
                 <br>   
-                <div class="col-6 mt-5 pl-4">
+                <div class="col-lg-6 col-12 mt-5 pl-4">
                     <input class="form-control textfield w-50 element-center" type='text' name='name' placeholder="Name"  required>
                     <input class="form-control textfield w-50 element-center" type='text' name='name' placeholder="Email"  required>
                     <input class="form-control textfield w-50 element-center" type='text' name='name' placeholder="Contact No"  required>
                 </div>
-                <div class="col-6 mt-5">
+                <div class="col-lg-6 col-12 mt-5">
                     <textarea class="form-control textfield element-center w-50" rows = "3" placeholder="Message" required="" name="message"></textarea>
-                    <button class="btn btnsubmit contact-submit ml-3 mt-2" type="submit">SUBMIT</button>
+                    <button class="btn btnsubmit contact-submit ml-3 mt-2 pr-4 pl-4" type="submit">SUBMIT</button>
                 </div>
             </div>
 
@@ -356,7 +356,6 @@ include('includes/config.php');
             
             <?php 
                 include('includes/footer.php');
-
             ?>
 
 		</div>
