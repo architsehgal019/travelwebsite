@@ -134,6 +134,7 @@ a{
 .honeymoon-logo{
 	width: 158px;
     height: 80px;
+    margin-right: -60px;
 }
 .input-group-append{
 	background-color: #1a1c1e !important;
@@ -225,7 +226,15 @@ p{
 	height: 8%;
 }
 .parallax{
-	background-image: url('../images/sliderimg3.jpg');
+	background-image: url('../images/travel6.jpg');
+	min-height: 800px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax_nopic{
+/*	background-image: none;*/
 	min-height: 800px;
 	background-attachment: fixed;
 	background-position: center;
@@ -273,4 +282,102 @@ input.transparent-input{
 .contact-icons-top{
     height: 18px;
     width: 18px;
+}
+/*
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+*/
+
+.dropdown-menu{
+    width: 100%;
+    background: rgba(34, 34, 34,0.9);
+    max-height: 300px;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: left;
+    margin-top: 15px;
+}
+/*
+.dropdown-menu>a{
+        color: #ccc;
+    padding: 5px 0;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+*/
+.dropdown-item{
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    
+   
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.dropdown-item:hover{
+    background-color: transparent;
+}
+.dropdown-item > i{
+    font-size: 8px;
+}
+/*
+.dropdown-menu{
+    display:none;
+}
+*/
+/*
+.dropdown-item-1{
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    font-size: 9px;!important
+    text-transform: uppercase;
+    display: none;
+   
+    text-transform: capitalize;
+    font-weight: 600;
+}
+*/
+.sub-cat-menu{
+/*    display: none;*/
+    background-color:black;
+}
+/*
+.dropdown-item-sub{
+    display: none;
+}*/
+.header-detail{
+    background-color: red;
+}
+.day_detail{
+    border-right: 2px solid white;
 }
