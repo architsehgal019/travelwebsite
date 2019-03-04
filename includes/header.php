@@ -29,7 +29,7 @@
 							<div class="collapse navbar-collapse mx-auto" id="dropdownmenu">
 								<ul class="navbar-nav mx-auto text-uppercase main-ul">
 									<li class="nav-item mx-3 dropdown">
-                                        <a href="#" class="menu-items nav-link " id ="dropdown_submenu" role="button" data-toggle="dropdown" aria-hospopup="true" aria-expanded="false">Destinations<i class="fa fa-chevron-down ml-2"></i></a>
+                                        <a href="#" style="padding-top:3px;" class="menu-items nav-link " id ="dropdown_submenu" role="button" data-toggle="dropdown" aria-hospopup="true" aria-expanded="false">Destinations<i class="fa fa-chevron-down ml-2"></i></a>
                                         <div class="dropdown-menu" aria-labelledby="dropdown_submenu">
                                         
 										<!-- PHP CODE STARTS -->                   
