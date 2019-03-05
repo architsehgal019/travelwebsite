@@ -17,74 +17,68 @@
 			</div>
 
 			<!-- row for main header -->
-			<div class="row navbar-row text-white w-100 main-header">
-					<div class="col-lg-3 col-12 p-2 d-flex align-items-center justify-content-between">
-						<a href="#" class="ml-lg-5"><img src="images/icons/logo.png" class="site-logo"></a>
-						<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#dropdownmenu" aria-controls="dropdownmenu" aria-expanded="false" aria-label="toggle navigation">
-							<i class="fa fa-bars"></i>
-						</button>
-					</div>
-					<div class="col-lg-9 col-12 d-flex align-items-right justify-content-end pr-5">
-						<nav class="navbar navbar-expand-lg float-right">
-							<div class="collapse navbar-collapse mx-auto" id="dropdownmenu">
-								<ul class="navbar-nav mx-auto text-uppercase main-ul">
-									<li class="nav-item mx-3 dropdown">
-                                        <a href="#" style="padding-top:3px;" class="menu-items nav-link " id ="dropdown_submenu" role="button" data-toggle="dropdown" aria-hospopup="true" aria-expanded="false">Destinations<i class="fa fa-chevron-down ml-2"></i></a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown_submenu">
-                                        
-										<!-- PHP CODE STARTS -->                   
-                    					<?php 
-                        				$category=mysqli_query($con,"select * from destinations");    
-                            			while($row=mysqli_fetch_assoc($category))
-                                		{
-                  						?>										
-										       
-                                        <a class="dropdown-item p-1 "><i class="fa fa-chevron-right mr-4"></i>
-                                            <?php echo htmlentities($row['name']);
-                                            $subcategory=mysqli_query($con,"select * from subdestinations WHERE destination_id = '".$row['id']."'");
-                                            $subrows = mysqli_num_rows($subcategory);
-                                               
-                                        	if($subrows>0){
-                                               while($sub_row=mysqli_fetch_assoc($subcategory))
-                                                {?>
-                                            <div class="sub-cat-menu" >
-                                               <a class="dropdown-item-sub p-1" href="./products.php" style="float: left;
-                                                width: 50%;
-                                                padding: 0;
-                                                margin: 0;
-                                                font-size: 9px;!important
-                                                text-transform: lowercase;
-                                            	display:none;
-                                                text-transform: capitalize;
-                                                font-weight: 600;
-                                                background-color:black;">
-                                                <?php echo htmlentities($sub_row['subdestination_name']);
-                                               }
+			<div class="navbar main-header navbar-expand-md w-100 mb-4" role="navigation">
+    			<a class="navbar-brand" href="#">
+    				<img src="images/icons/logo.png" class="site-logo">
+    			</a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			        <i class="fa fa-bars"></i>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarCollapse">
+			        <ul class="navbar-nav ml-auto">
+			            <li class="nav-item mr-2 active dropdown">
+			                <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Destinations<span class="sr-only">(current)</span></a>
+			                <ul class="dropdown-menu" aria-labelledby="dropdown1">
+			                <?php
+			                $category=mysqli_query($con,"select * from destinations");
+			                while($row=mysqli_fetch_assoc($category))
+			                {
+			                ?>
+			                	<li class="dropdown-item dropdown mb-1" id="dropdown1-1">
+			                		<a href="#" class="dropdown-toggle" id="dropdown1-1" aria-haspopup="true" aria-expanded="false">
+			                			<i class="fa fa-chevron-right mr-2"></i>
+			                			<?php echo htmlentities($row['name']); ?>
+			                		</a>
+			                			<?php
+			                			$subcategory=mysqli_query($con,"select * from subdestinations WHERE destination_id = '".$row['id']."'");
+                                        $subrows = mysqli_num_rows($subcategory);
+                                        if($subrows>0){
+                                        	?>
+                                        	<ul class="dropdown-menu" aria-labelledby="dropdown1-1" style="z-index:999;">
+                                        	<?php
+                                        	while($sub_row=mysqli_fetch_assoc($subcategory)){
+                                        	?>
+                                        	<li class="dropdown-item mb-1" href="#"><a><?php
+                                        	echo htmlentities($sub_row['subdestination_name']);
+                                        	?></a></li>
+                                        	<?php	
                                         	}
-                                                    
-                            				} ?></a></div></a>
-                                          
-                                           	</div>
-                                       </li>       
-									<!--PHP CODE ENDS-->
-                                    
-									<li class="nav-item mx-3">
-										<a href="#" class="menu-items">team</a>
-									</li>
-									<li class="nav-item mx-3">
-										<a href="#" class="menu-items">testimonial</a>
-									</li>
-									<li class="nav-item mx-3">
-										<a href="#" class="menu-items">BLOGS</a>
-									</li>
-									<li class="nav-item mx-3">
-										<a href="#" class="menu-items">pay</a>
-									</li>
-								</ul>
-								<button class="btn" type="button"><i class="fa fa-search"></i></button>
-								<a href="#"><img src="images/icons/honeymoonnewlogo.png" class="honeymoon-logo" ></a>
-							</div>
-						</nav>
-					</div>
+                                        ?>
+                                    		</ul>
+                                        <?php
+                                        }
+			                			?>	
+			                	</li>
+			            	<?php } ?>
+			            	</ul>
+
+			            </li>
+			            <li class="nav-item mr-2">
+			                <a class="nav-link" href="#" target="_blank">Team</a>
+			            </li>
+			            <li class="nav-item mr-2">
+			                <a class="nav-link disabled" href="#">Testimonial</a>
+			            </li>
+			            <li class="nav-item mr-2">
+			                <a class="nav-link disabled" href="#">Blogs</a>
+			            </li>
+			            <li class="nav-item mr-2">
+			                <a class="nav-link disabled" href="#">Pay</a>
+			            </li>
+			            <li class="nav-item mr-2">
+			            	<a class="nav-link"><i class="fa fa-search"></i></a>
+			            </li>
+			        </ul>
+			    </div>
 			</div>
 			

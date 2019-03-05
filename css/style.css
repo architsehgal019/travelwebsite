@@ -347,25 +347,20 @@ input.transparent-input{
 .dropdown-item > i{
     font-size: 8px;
 }
-/*
-.dropdown-menu{
-    display:none;
+
+.nav-link{
+    text-transform: uppercase !important;
+    font-family: 'Raleway','Helvetica Neue',Arial,Verdana,sans-serif !important;
+    font-weight: 550 !important;
+    letter-spacing: 1px !important;
+    font-size: 14px !important;
+
 }
-*/
-/*
-.dropdown-item-1{
-    float: left;
-    width: 50%;
-    padding: 0;
-    margin: 0;
-    font-size: 9px;!important
-    text-transform: uppercase;
-    display: none;
-   
-    text-transform: capitalize;
-    font-weight: 600;
+.dropdown-item{
+    font-size: 12px !important;
+    font-family: 'Raleway','Helvetica Neue',Arial,Verdana,sans-serif !important;
+    
 }
-*/
 .sub-cat-menu{
 /*    display: none;*/
     background-color:black;
@@ -380,3 +375,6 @@ input.transparent-input{
 .day_detail{
     border-right: 2px solid white;
 }
+
+/*new code*/
+ 
