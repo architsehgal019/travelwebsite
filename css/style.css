@@ -318,6 +318,9 @@ input.transparent-input{
     text-align: left;
     margin-top: 15px;
 }
+.submenu-dark{
+    background: rgba(34, 34, 34,1) !important;
+}
 /*
 .dropdown-menu>a{
         color: #ccc;
@@ -359,7 +362,7 @@ input.transparent-input{
 .dropdown-item{
     font-size: 12px !important;
     font-family: 'Raleway','Helvetica Neue',Arial,Verdana,sans-serif !important;
-    
+
 }
 .sub-cat-menu{
 /*    display: none;*/

@@ -44,7 +44,7 @@
                                         $subrows = mysqli_num_rows($subcategory);
                                         if($subrows>0){
                                         	?>
-                                        	<ul class="dropdown-menu" aria-labelledby="dropdown1-1" style="z-index:999;">
+                                        	<ul class="dropdown-menu submenu-dark" aria-labelledby="dropdown1-1" style="z-index:999;">
                                         	<?php
                                         	while($sub_row=mysqli_fetch_assoc($subcategory)){
                                         	?>
