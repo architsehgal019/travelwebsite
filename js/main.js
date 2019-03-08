@@ -1,6 +1,6 @@
 $(document).ready(function(){
 window.onscroll = function(){
-    if(window.pageYOffset > 400){
+    if(window.pageYOffset > 50){
         $(".main-header").addClass("scroll-fix");
         $(".upper-header").removeClass("fix-pos");
         $(".site-logo").css("height","65px");
@@ -68,7 +68,12 @@ window.onscroll = function(){
 });
     
     
-    
+    $("#google-reviews").googlePlaces({
+        placeId: 'ChIJ9W_ZHr8EDTkRf9cVfSBNP6c' //Find placeID @: https://developers.google.com/places/place-id
+      , render: ['reviews']
+      , min_rating: 4
+      , max_rows:4
+   });
     
     
     

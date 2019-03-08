@@ -154,9 +154,11 @@ a{
 	    font-family: 'Raleway','Helvetica Neue',Arial,Verdana,sans-serif;
     text-transform: uppercase;
 }
+/*
 p{
 	font-size: 16px !important;
 }
+*/
 .btnsubmit{
 	background-color: #eb3558 !important;
 	color: white !important;
@@ -234,12 +236,13 @@ p{
 	background-size: cover;
 }
 .parallax_nopic{
-/*	background-image: none;*/
+	background-image: url('../images/travel5.jpg');
 	min-height: 800px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+    position: fixed;
 }
 .element-center{
 	margin: 0 auto !important;
@@ -376,8 +379,181 @@ input.transparent-input{
     display: none;
 }*/
 .header-detail{
-    background-color: red;
+    background-color:black;
 }
+/*
 .day_detail{
     border-right: 2px solid white;
+}
+*/
+
+
+/*
+.gallery {
+     width:300px;
+     height:200px;
+     position: relative;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+
+	.gallery-image{
+cursor:pointer;
+		position: relative;
+		display: block;
+	}
+
+	.gallery-text{
+	    position: absolute;
+	    top: 0; right: 0;
+	    bottom: 0; left: 0;
+	    width: 300px;
+	    height: 200px; 
+	    text-align: center;
+	    background-color: rgba(0,0,0,0.8);
+	    opacity: 0;
+	    -webkit-transition: opacity 0.6s;
+	    -moz-transition: opacity 0.6s;
+	    transition: opacity 0.6s;
+       vertical-align:middle;
+       line-height:200px;
+	}
+
+	.gallery-text:hover{
+	    opacity: 1;      
+	}
+
+	.gallery-text h3{
+	    color: white;
+	    display: inline-table;
+       vertical-align:middle;
+       line-height:100%;            
+	}
+*/
+
+
+.location-img {
+    position: relative;
+/*
+    width: 500px;
+    height: 500px;
+*/
+/*    background: gray;*/
+}
+
+.centered {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+/*    background: gold;*/
+    padding: 2rem;
+}
+.h{
+    position: fixed;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+.package-head{
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+.packages-detail-btn{
+ 
+  background-color: #eb3558 !important;
+	color: white !important;
+	border-radius: 20px !important;
+/*	width: 24% !important; */
+	font-size: 11px !important;
+    font-family: avenirroman; !important
+}
+.price{
+  color: #eb3558 ;
+    font-size: 15px;
+    font-family: avenirroman; !important
+}
+.place{
+    font-family: avenirroman; !important
+    font-size:10px;!important
+    
+}
+.days{
+    font-family:avenirroman; !important
+    font-weight:bolder;!important
+}
+.card{
+    border: 2px solid black;
+    
+}
+.day_number>h4{
+   color: #eb3558 ;
+}
+
+.day_detail>p{
+    color:aquamarine;
+    font-family: avenirroman;
+    font-weight: 700;
+}
+.day_detail{
+    color:aquamarine;
+    font-family: avenirroman;
+    font-weight: 500;
+}
+/*
+.pills-tabContent{
+    color: white;!important
+}*/
+.nav-pills .nav-link.active ,.nav-link{
+    background-color: transparent;!important
+    
+    color: aquamarine;!important
+    text-transform: uppercase;!important
+}
+.nav-pills .nav-link.active ,.nav-link{
+text-decoration: none;!important
+}
+.nav-link{
+    font-family: avenirroman;
+    font-weight: 700;
+}
+
+#pills-inclusion,#pills-exclusion{
+    color: white;!important
+}
+.testimonial-row{
+    display: block;
+    padding-top: 100px;
+   
+}
+.testimonial-left,.testimonial-right{
+    border: 1px solid white;
+}
+.inverted-c{
+    height: 110px;
+    width: 110px;
+}
+.testimonial_pic{
+    height: 220px; 
+    width: 200px;
+}
+.test-name{
+/*    text-align: center;*/
+    margin-top: 19px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid;
+    font-family: avenirroman;
+    
+}
+.test-text{
+    text-align: left;
+    font-family: avenirroman;
+    font-size: 13px;
+}
+.des-text{
+    font-family: avenirroman;
+    font-size:10px;
 }

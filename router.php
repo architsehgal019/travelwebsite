@@ -87,35 +87,15 @@ $name = $_GET['name'];
             $package=mysqli_query($con,"select * from travelpackages WHERE destination_id = '".$id."'");
             
             $numrows = mysqli_num_rows($package);
- 
-                if($numrows%3 == 0){
-                    $count = $numrows / 3;
-    
-                        while($count>0)
-                        {
-                        $count--;
-                        echo "Card group";
-                       ?>
-                            
-                            <div class="card-group mt-5 mb-5">
-                            
-                          <?php 
-                            $innercount = 0;
-                            while(($sub_row=mysqli_fetch_assoc($package))){ 
-                                  $ns = mysqli_num_rows($sub_row);
-//                                $innercount++; 
-//                                1...2..
-//                                    echo $ns;
-//                                  echo $sub_row[0];  
-//                                    echo $innercount;
-                                
-                                ?>
-                            
-                                
-                                
-                                
-                                
-                                <div class="card">
+            ?>
+            <div class = "row mb-5">
+                <?php
+                    while(($sub_row=mysqli_fetch_assoc($package))){ 
+                         $ns = mysqli_num_rows($sub_row);
+                ?>
+                <div class="col-lg-4 col-12 p-0">
+                        
+                        <div class="card">
                                     
 <!--                                        <?php echo '<img class="card-img-top"  alt="Card image cap"                          src="data:image/jpeg;base64,'.base64_encode($sub_row['image'] ).'"/>'; ?>-->
                                     <img class="card-img-top" src="images/travel5.jpg" alt="Card image cap">
@@ -124,11 +104,11 @@ $name = $_GET['name'];
                                        <div class="row">
                                                <div class="col-6">
                                                    <p class="place"><?php echo htmlentities($sub_row['package_name']); ?></p>
-                                                   <p class="days"><?php echo htmlentities($sub_row['nights']); ?> nights &amp; <?php echo htmlentities($sub_row['days']); ?> days</p>
+                                                   <p class="days" style=" font-weight:bolder;"><?php echo htmlentities($sub_row['nights']); ?> nights &amp; <?php echo htmlentities($sub_row['days']); ?> days</p>
 
                                                </div>
                                                <div class="col-6">
-                                                    <h5 class="card-title price float-right">Price: Rs <?php echo htmlentities($sub_row['price']); ?></h5>
+                                                    <h5 class="card-title price float-right" style=" font-weight:bolder;">Price: Rs <?php echo htmlentities($sub_row['price']); ?></h5>
 
                                                   <button type="button" class="btn btn-danger packages-detail-btn float-right"><a href="itinerary.php?pkg_id=<?php echo htmlentities($sub_row['package_id']);?>">VIEW DETAILS</a></button>
 
@@ -139,112 +119,14 @@ $name = $_GET['name'];
                                         </div>
 
                               </div>
-
-                            
-                            
-                          <?php  
-//                                 if($innercount > -1){
-//                                    echo "Printed cards: ".$innercount; 
-////                                    $innercount == 3
-//                                }
-                                
-                            } ?>
-                            
-                            
-                            </div>
-                            
-                <?php        
                         
-                            
-                            
-                        }
-    
-                }
+                </div>
+                <?php } ?>
+            </div>
             
-            
-            ?>
            
            
-           
-<!--
-             <div class="card-group mt-5 mb-5">
-              <div class="card">
-                <img class="card-img-top" src="images/travel5.jpg" alt="Card image cap">
-                <div class="card-body">
-          
-                   <div class="row">
-                       <div class="col-6">
-                           <p class="place">Exotic shimla manali for</p>
-                           <p class="days">5 nights &amp; 6 days</p>
-
-                       </div>
-                       <div class="col-6">
-                            <h5 class="card-title price float-right">Price: Rs 13,000</h5>
-          
-                          <button type="button" class="btn btn-danger packages-detail-btn float-right">VIEW DETAILS</button>
-
-                       </div>
-
-                    </div>
-
-                </div>
-
-              </div>
-
-
-
-              <div class="card">
-                <img class="card-img-top" src="images/travel5.jpg" alt="Card image cap">
-                <div class="card-body">
-          
-                   <div class="row">
-                       <div class="col-6">
-                           <p class="place">Exotic shimla manali for</p>
-                           <p class="days">5 nights &amp; 6 days</p>
-
-                       </div>
-                       <div class="col-6">
-                            <h5 class="card-title price float-right">Price: Rs 13,000</h5>
-          
-                          <button type="button" class="btn btn-danger packages-detail-btn float-right">VIEW DETAILS</button>
-
-                       </div>
-
-                    </div>
-
-                </div>
-
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="images/travel5.jpg" alt="Card image cap">
-                <div class="card-body">
-          
-                   <div class="row">
-                       <div class="col-6">
-                           <p class="place">Exotic shimla manali for</p>
-                           <p class="days">5 nights &amp; 6 days</p>
-
-                       </div>
-                       <div class="col-6">
-                            <h5 class="card-title price float-right">Price: Rs 13,000</h5>
-          
-                          <button type="button" class="btn btn-danger packages-detail-btn float-right">VIEW DETAILS</button>
-
-                       </div>
-
-                    </div>
-
-                </div>
-
-              </div>
--->
-              
-              
-              
-              
-
-              
-              
+   
               
               
               

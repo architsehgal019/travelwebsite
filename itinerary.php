@@ -1,6 +1,7 @@
 <?php session_start();
 error_reporting(0);
 include('includes/config.php');
+$id = $_GET['pkg_id'];
 
  ?>
 
@@ -24,135 +25,66 @@ include('includes/config.php');
 
 			<?php 
                 include('includes/header.php');
-
+                $package=mysqli_query($con,"select * from travelpackages WHERE package_id = '".$id."'");
+                $inclusions =mysqli_query($con,"select * from inclusion WHERE package_id = '".$id."'");
+             $exclusions =mysqli_query($con,"select * from exclusion WHERE package_id = '".$id."'");
+            
+                $numrows = mysqli_num_rows($package);
+                while($sub_row=mysqli_fetch_assoc($package)){
             ?>
 
-			<!-- image slider -->
 <!--
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  				<div class="carousel-inner">
-    				<div class="carousel-item active parallax">
-    				</div>
-    				<div class="carousel-item parallax">
-    				</div>
-    				<div class="carousel-item parallax">
-    				</div>
-  				</div>
-  				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    				<span class="sr-only">Previous</span>
-  				</a>
-  				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-    				<span class="sr-only">Next</span>
-  				</a>
-			</div>
+		     <?php
+            
+            
+            ?>
 -->
-
-			<!-- about us section -->
-<!--
-			<div class="row bgblack text-white">
-				<div class="col-12 col-lg-6 p-5 mt-4">
-					<h2 class="about-heading">KBG Holidays Pvt. Ltd.</h2>
-					<br>
-					<p>
-						The holiday packages at KBG Holidays Pvt Ltd are designed to meet the different travelling needs of our customers from across the globe. Our experienced team provides you unbiased guidance at each step-undedrstanding your need, planning, traveling, staying and eploring. To make these packages more valuable, we constantly monitor and enhance them to meet the ever-changing environment and facilities.
-					</p>
-					<p>
-						Our goal is to save your time and money with quick, quality results and simple comparisons. Not only do we want to help you find the perfect trip- we want to make sure you are happy with the trip provided. We make sure that we customize your trip as per your requirements and catter to them at every step of your trip.
-					</p>
-					<p>
-						In simple words, "Your dream it & we picturize it in reality". As we stand only one thing.
-					</p>
-					<button class="btn btnsubmit float-right" type="submit">Read More</button>
-				</div>
-				<div class="col-12 col-lg-6 mt-4 p-5">
-					<div id="carouselIndicators" class="carousel slide" data-ride="carousel" style="height: 50%;">
-						<div class="carousel-inner h-100">
-						    <div class="carousel-item active h-100">
-						      <img class="d-block w-100 h-100" src="images/about1.jpg" alt="First slide">
-						    </div>
-						    <div class="carousel-item h-100">
-						      <img class="d-block w-100 h-100" src="images/about2.jpg" alt="Second slide">
-						    </div>
-						    <div class="carousel-item h-100">
-						      <img class="d-block w-100 h-100" src="images/about3.jpg" alt="Third slide">
-						    </div>
-						</div>
-					</div>
-					
-					<div class="carousel-indicators mt-3">
-						<div class="row">
-							<div data-target="#carouselIndicators" data-slide-to="0" class="active col-4">
-						    	<img src="images/about1.jpg">
-							</div>
-							    
-							<div data-target="#carouselIndicators" data-slide-to="1" class="col-4">
-							    <img src="images/about2.jpg">
-							</div>
-							    
-							<div data-target="#carouselIndicators" data-slide-to="2" class="col-4">
-							    <img src="images/about3.jpg">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
--->
-			
-
-			<!-- popular destinations section -->
-<!--
-			<div class="row bgblack text-white d-flex justify-content-center">
-				<br>
-				<h2 class="about-heading mt-5">Popular Destinations</h2>
--->
-				
-				
-		
 
 			<!-- discount banner section --> 
-			<div class="row header-detail w-100 text-white d-flex justify-content-center p-4 ">
+			<div class="row header-detail w-100 text-white d-flex justify-content-center p-5">
                 <br>
                 
-                <div class="col-7 w-100 p-0 mt-5">
-                <h1 class="day_detail mt-5 w-100 text-white d-flex justify-content-center">Exotic Manali for 5 days 6 Nights<br>
+                <div class="col-7 w-100 p-2 mt-3">
+                <h1 class="day_detail mt-5 w-100 text-white d-flex justify-content-center">Exotic Manali for 
+                <?php echo htmlentities($sub_row['days']); ?> days <?php echo htmlentities($sub_row['nights']); ?> Nights<br>
                 Places Covered : Shimla - Manali</h1>
                 </div>
                 
-                <div class="col-3 w-100 p-0 mt-5">
-                <h1 class="about-heading mt-5 w-100 text-white d-flex justify-content-center ml-3">starting<br>@ 14,999</h1>
+                <div class="col-3 w-100 p-2 mt-3">
+                <h1 class="about-heading mt-5 w-100 text-white d-flex justify-content-center ml-3">starting<br>@ <?php echo htmlentities($sub_row['price']); ?></h1>
                 </div>
                 
-            </div>   
+            </div>  
+               
+            <?php }?> 
                 
                 
                 
             <div class="row w-100 text-white d-flex justify-content-center"> 
-                <div class="col-12 w-100 p-0 ">
-                    <img src="images/sliderimg2.jpg" alt="Discount" class="w-100">
+                <div class="col-12 w-100 p-0 parallax">
+<!--                    <img src="images/sliderimg2.jpg" alt="Discount" class="w-100">-->
                 </div>
             </div>
           
     
             
                     
-         <div class="row w-100 text-white d-flex justify-content-center"> 
-                <div class="col-12 w-100 p-0 ">
+         <div class="row w-100 text-white d-flex justify-content-center MT-5 mb-5"> 
+                <div class="col-8 w-100 p-0 ">
                    
                   
- <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-itinerary" role="tab" aria-controls="pills-home" aria-selected="true">Itinerary</a>
+ <ul class="nav nav-pills mb-3 float-left" id="pills-tab" role="tablist">
+  <li class="nav-item mr-5">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-itinerary" role="tab" aria-controls="pills-home" aria-selected="true">ITINERARY</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-inclusion" role="tab" aria-controls="pills-profile" aria-selected="false">Inclusions</a>
+  <li class="nav-item mr-5">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-inclusion" role="tab" aria-controls="pills-profile" aria-selected="false">INCLUSIONS</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-exclusion" role="tab" aria-controls="pills-contact" aria-selected="false">Exclusions</a>
+  <li class="nav-item mr-5">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-exclusion" role="tab" aria-controls="pills-contact" aria-selected="false">EXCLUSIONS</a>
   </li>
-   <li class="nav-item">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-hotel" role="tab" aria-controls="pills-contact" aria-selected="false">Hotels</a>
+   <li class="nav-item mr-5">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-hotel" role="tab" aria-controls="pills-contact" aria-selected="false">HOTELS</a>
   </li>
 </ul>
 
@@ -162,15 +94,58 @@ include('includes/config.php');
 
 
 
-<div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-itinerary" role="tabpanel" aria-labelledby="pills-home-tab">Home</div>
-  <div class="tab-pane fade" id="pills-inclusion" role="tabpanel" aria-labelledby="pills-profile-tab">Inclusions</div>
-  <div class="tab-pane fade" id="pills-exclusion" role="tabpanel" aria-labelledby="pills-contact-tab">Exclusions</div>
+<div class="tab-content ml-5" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-itinerary" role="tabpanel" aria-labelledby="pills-home-tab">
+  <div class="row ml-5">
+          
+           
+           <?php 
+            
+             $package_detail=mysqli_query($con,"select * from itinerary WHERE package_id = '".$id."'");
+            
+                $numrows = mysqli_num_rows($package_detail);
+                $day = 1;
+                while($it=mysqli_fetch_assoc($package_detail)){
+            
+            ?>
+  
+      <div class="day_number col-9">
+          <h4>Day-<?php echo $day." ".htmlentities($it['itinerary_title']); ?></h4>
+      </div>
+      <div class="col-9 day_detail">
+          <p><?php echo htmlentities($it['itinerary_description']); ?></p>
+      </div>
+    <?php $day++; }?>
+  
+  
+  </div>
+  
+  
+
+  
+  
+  
+  </div>
+  
+  <?php 
+    
+    while($inc=mysqli_fetch_assoc($inclusions)){
+            
+            ?>
+  <div class="tab-pane fade" id="pills-inclusion" role="tabpanel" aria-labelledby="pills-profile-tab"><?php echo $inc['inclusion']; ?></div> <?php }?>
+  
+   <?php 
+    
+    while($exc=mysqli_fetch_assoc($exclusions)){
+            
+            ?>
+  <div class="tab-pane fade" id="pills-exclusion" role="tabpanel" aria-labelledby="pills-contact-tab"><?php echo $exc['exclusion']; ?></div> <?php }?>
+  
   <div class="tab-pane fade" id="pills-hotel" role="tabpanel" aria-labelledby="pills-contact2-tab">Hotels Package Type</div>
 </div>
 
             <!-- google reviews section -->
-    
+    	<hr class="divider mt-5">
 
             <!-- footer section -->
             

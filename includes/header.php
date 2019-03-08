@@ -19,7 +19,7 @@
 			<!-- row for main header -->
 			<div class="row navbar-row text-white w-100 main-header">
 					<div class="col-lg-2 offset-lg-1 col-12 p-2 d-flex align-items-center justify-content-between">
-						<a href="#" class="ml-3"><img src="images/icons/logo.png" class="site-logo"></a>
+						<a href="index.php" class="ml-3"><img src="images/icons/logo.png" class="site-logo"></a>
 						<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#dropdownmenu" aria-controls="dropdownmenu" aria-expanded="false" aria-label="toggle navigation">
 							<i class="fa fa-bars"></i>
 						</button>
@@ -48,15 +48,13 @@
                   ?>										
 										
                                         
-<!--                                        <li class="nav-item dropdown">-->
-<!--                                            <a class="nav-link dropdown-toggle" id ="dropdown_submenu" role="button" data-toggle="dropdown" aria-hospopup="true" aria-expanded="false" href="./products.php"></a>-->
-                                                
+        
 
                                                
                                                     
                       
                                                
-                                                <a class="dropdown-item p-1 "><i class="fa fa-chevron-right mr-4"></i>
+                                                <a class="dropdown-item p-1 " href="router.php?name=<?php echo htmlentities($row['name']); ?>&id=<?php echo htmlentities($row['id']); ?>"><i class="fa fa-chevron-right mr-4"></i>
 <!--                                                <div class="dropdown-menu" aria-labelledby="dropdown_submenu">-->
                                                 <?php echo htmlentities($row['name']);
                                 
@@ -67,7 +65,7 @@
                                                while($sub_row=mysqli_fetch_assoc($subcategory))
                                                 {?>
                                             <div class="sub-cat-menu" >
-                                               <a class="dropdown-item-sub p-1" href="./products.php" style="float: left;
+                                               <a class="dropdown-item-sub p-1" href="router.php?name=<?php echo htmlentities($sub_row['subdestination_name']); ?>" style="float: left;
                                                 width: 50%;
                                                 padding: 0;
                                                 margin: 0;
@@ -102,7 +100,7 @@
 										<a href="#" class="menu-items">team</a>
 									</li>
 									<li class="nav-item mx-3">
-										<a href="#" class="menu-items">testimonial</a>
+										<a href="testimonial.php" class="menu-items">testimonial</a>
 									</li>
 									<li class="nav-item mx-3">
 										<a href="#" class="menu-items">BLOGS</a>
