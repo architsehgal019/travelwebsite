@@ -1,9 +1,9 @@
 <div class="row d-flex bg-black text-center text-white align-items-center justify-content-center mt-5">
-            	<div class="col-3">
+            	<div class="col-lg-3 col-12">
               		<img src="images/icons/logo.png" class="bottom-logo">
           		</div>
-          		<div class="col-6 text-center">
-		            <div class="row">
+          		<div class="col-lg-6 col-12 text-center">
+		            <div class="row mb-4 mt-5 mt-lg-1">
 		                <div class="col-12 ">
 		                    <div class="contact-list float-left">
 		                        <a href="#" class="list-item">About Us</a>
@@ -19,30 +19,30 @@
 		                </div>
 		            </div>
 		            <div class="row">
-		                <div class="col-12 mt-4"> 
-		                  	<img src="images/icons/contactvlogo.png" class="contact-icons float-left">
-		                    <span class="float-left ml-3 icon-detail" style="margin-top: 1%;font-size: 16px;color: white;">travelwithjatin@gmail.com</span>
+		                <div class="col-12 mt-4 text-lg-left text-center"> 
+		                  	<img src="images/icons/contactvlogo.png" class="contact-icons float-left mr-4">
+		                    travelwithjatin@gmail.com
+		                    <!-- <span class="float-left ml-3 icon-detail" style="margin-top: 1%;font-size: 16px;color: white;"></span> -->
 		                </div>
 		            </div>
 		            <div class="row">
-		                <div class="col-12 mt-4">        
-		                  	<img src="images/icons/contactlogo.png" class="contact-icons float-left">
-		                    <span class="float-left ml-3 icon-detail" style="margin-top: 1%;font-size: 16px;color: white;">+91-7303969097</span>
+		                <div class="col-12 mt-4 text-lg-left text-center">        
+		                  	<img src="images/icons/contactlogo.png" class="contact-icons float-left mr-4">+91-7303969097
+		                    <!-- <span class="float-left ml-3 icon-detail" style="margin-top: 1%;font-size: 16px;color: white;"></span> -->
 		                </div>
 		            </div>
 		            <div class="row">
-		                 <div class="col-12 mt-4">
-		                  	<img src="images/icons/address.png" class="contact-icons float-left">
-		                    <span class="float-left ml-3 icon-detail" style="margin-top: 1%;font-size: 16px;color: white;">506 B&c, Jaina Tower II,
-		                     District Centre Janakpuri, New Delhi 110085</span>
+		                 <div class="col-12 mt-4 text-lg-left text-center">
+		                  	<img src="images/icons/address.png" class="contact-icons float-left mr-4">506 B&c, Jaina Tower II,
+		                     District Centre Janakpuri, New Delhi 110085
+		                    <!-- <span class="float-left ml-3 icon-detail" style="margin-top: 1%;font-size: 16px;color: white;"></span> -->
 		                </div>
 		            </div>
           		</div>
            
-	           	<div class="col-3">
+	           	<div class="col-lg-3 col-12">
 	               	<div class="row">
-	                   	<div class="col-12 social-upper"></div>
-	                   	<div class="col-12">
+	                   	<div class="col-12 mt-5 mt-lg-1 d-flex align-items-center justify-content-center">
 	                       <img src="images/icons/fblogo.png" class="social-icon float-left">
 	                       <img src="images/icons/instalogo.png" class="social-icon float-left ml-5">
 	                       <img src="images/icons/twitterlogo.png" class="social-icon float-left ml-5">
