@@ -163,7 +163,9 @@ p{
 	color: white !important;
 	border-radius: 20px !important;
 	/*width: 24% !important; */
-	font-size: 14px !important;
+	font-size: 17px !important;
+   
+     font-family: avenirroman;!important
 }
 .divider{
 	background-color: white !important;
@@ -260,9 +262,14 @@ input.transparent-input{
 }
 .contact-list .list-item{
     display: inline-block;
+    font-family: avenirroman;!important
+}
+.about-us-link a{
+     font-family: avenirroman;!important
 }
 .list-item{
     color: aliceblue;
+    font-family: avenirroman;!important
     font-size:16px;
 }
 .contact-icons{
@@ -557,7 +564,11 @@ text-decoration: none;!important
 
 
 /*ABOUT US CSS*/
-
+.about-heading{
+ color: #eb3558 ;!important;
+    text-transform: capitalize;
+font-family: avenirroman;
+}
 .about-div,.founder-div{
     padding:90px; !important
 }
@@ -567,15 +578,58 @@ text-decoration: none;!important
 }
 
 .team-div{
+/*
 	padding-left: 2px !important;
 	padding-right: 2px !important;
-	height: 300px;
+*/
+    margin-left: 6%;
+	height: 400px;
 /*	position: relative;*/
     border: 1px solid white;
 }
 .team-div img{
+    
+    width: 100%;
+    height: 300px;
+/*
 	width: 100%;
 	height: 100%;
 	display: block;
+*/
 
+}
+.person-name{
+    font-weight: bold;
+    font-family: avenirroman;!important
+    font-size: 30px;!important
+}
+.person-designation{
+    
+    font-family: avenirroman;!important
+    font-size: 10px;!important
+}
+
+
+/*HOTEL CSS*/
+
+.hotel-head{
+    color: #eb3558 ;!important;
+     
+}
+.hotel-detail{
+    color: white;!important
+    
+}
+.hotel-head, .hotel-detail{
+    font-family: avenirroman;!important
+    font-size: 20px;!important
+}
+#pills-hotel{
+    font-size: 20px; !important
+}
+.it-btn{
+    width: 250px;!important
+}
+.tab-pane{
+    min-height: 300px;!important
 }

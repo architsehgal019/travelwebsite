@@ -1,7 +1,7 @@
 <div class="row bgpink text-white upper-header fix-pos w-100">
 	   	        <div class="col-12 col-lg-6 offset-lg-6 pt-2 pb-2 pl-1 pr-1 text-center d-flex align-items-center justify-content-center">
 	   	        	<div class="about-us-link p-1 mr-lg-3 pl-2 pr-2 d-lg-block d-none">
-	   	        		<a href="aboutus.php">ABOUT US</a>
+	   	        		<a href="aboutus.php" class="about">ABOUT US</a>
 	   	        	</div>
 	   	        	<div class="upper-header-logo p-1 d-lg-block d-none"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
 	   	        	<div class="upper-header-logo p-1 ml-lg-3 ml-1 d-lg-block d-none"><a href="#"><i class="fab fa-youtube"></i></a></div>
@@ -18,7 +18,7 @@
 
 			<!-- row for main header -->
 			<div class="navbar main-header navbar-expand-md w-100 mb-4" role="navigation">
-    			<a class="navbar-brand" href="#">
+    			<a class="navbar-brand" href="index.php">
     				<img src="images/icons/logo.png" class="site-logo">
     			</a>
 			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,9 +63,11 @@
 			            	</ul>
 
 			            </li>
+<!--
 			            <li class="nav-item mr-2">
 			                <a class="nav-link" href="#" target="_blank">Team</a>
 			            </li>
+-->
 			            <li class="nav-item mr-2">
 			                <a class="nav-link" href="testimonial.php">Testimonial</a>
 			            </li>

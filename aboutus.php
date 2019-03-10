@@ -24,8 +24,9 @@ include('includes/config.php');
 	
         <?php 
                 include('includes/header.php');
-                
-
+                $about_detail=mysqli_query($con,"select * from abouts");
+            $team_detail=mysqli_query($con,"select * from teams");
+                 while($about=mysqli_fetch_assoc($about_detail)){
           ?>
 
             <div class="row w-100 text-white d-flex justify-content-center about-row pt-5">
@@ -36,7 +37,7 @@ include('includes/config.php');
                 
                  
                         <h3 class="about-heading">About Us</h3>
-                        <div class="about-text "><p>This is test data This is test data This is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test data</p></div>
+                        <div class="about-text "><p><?php echo $about['aboutcontent']; ?></p></div>
                        
                         
                   
@@ -45,17 +46,18 @@ include('includes/config.php');
                  <div class="col-6 founder-div ">
                 
                  
-                        <h5 class="about-heading">About Us</h5>
+                        <h5 class="about-heading">Founder's Message</h5>
                         <img src="images/icons/inverted.png" alt="" class="founder-img">
-                        <h5 class="about-heading pt-5">Jatin Arora</h5>
+                         
+                        <h5 class="about-heading pt-5"><?php echo htmlentities($about['foundername']); ?></h5>
                         <div class="founder-des pt-1">
                             <p>Founder</p>
                         </div>
                         
-                        <div class="founder-text pt-1"><p>This is test data This is test data This is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test dataThis is test data</p></div>
+                        <div class="founder-text pt-1"><p><?php echo $about['foundermsg']; ?></p></div>
                        
                         
-                  
+                   <?php  }?>
                 </div>
                
                
@@ -65,171 +67,80 @@ include('includes/config.php');
                 
             </div>
 
-
+        <hr class="divider mt-5">
         
         <div class="row bgblack text-white d-flex justify-content-center">
 				<br>
-				<h3 class="about-heading mt-5">Meet Our Team</h3>
+				<h2 class="about-heading mt-5">Meet Our Team</h2>
 				
 				<div id="carouselExample" class="carousel slide w-100 mt-5" data-ride="carousel">
 					<div class="carousel-inner">
+                    
+                       
+                       
+                        
+                        
+                    
 	    				<div class="carousel-item active">
 	      					<div class="row">
-	      						<div class="col-lg-4 col-6 team-div">
-<!--	      							<img src="images/travel.jpg">-->
+	      					
+	      						<div class="col-lg-3 col-6 team-div p-0">
+	      							<img src="images/travel.jpg" class="d-flex justify-content-center">
+	      							<div style="color:white;" class="mt-3"><p class="d-flex justify-content-center person-name">Gaganpreet Arora</p>
 	      							
-<!--
-	      							<div class="overlay">
-	      								<div class="w-100 h-100 pl-3 pt-1">
-	      									<div class="text">
-	      										Kutch
-	      										<br>
-	      										<span class="subtext">Gujarat</span>
-	      									</div>
-	      								</div>
-	      							</div>
--->
-	      						</div>
-	      						<div class="col-lg-4 col-6 destination">
-	      							<img src="images/travel1.jpg">
-	      							<div class="overlay">
-	      								<div class="w-100 h-100 pl-3 pt-1">
-	      									<div class="text">
-	      										Anjuna Beach
-	      										<br>
-<!--	      										<span class="subtext">Goa</span>-->
-	      									</div>
-	      								</div>
-	      							</div>
-	      						</div>
-	      						<div class="col-lg-4 col-6 destination">
-	      							<img src="images/travel3.jpg">
-	      							<div class="overlay">
-	      								<div class="w-100 h-100 pl-3 pt-1">
-	      									<div class="text">
-	      										Udaipur
-	      										<br>
-<!--	      										<span class="subtext">Rajasthan</span>-->
-	      									</div>
-	      								</div>
-	      							</div>
-	      						</div>
-<!--
-	      						<div class="col-lg-4 col-6 destination mt-1">
-	      							<img src="images/travel4.jpg">
-	      							<div class="overlay">
-	      								<div class="w-100 h-100 pl-3 pt-1">
-	      									<div class="text">
-	      										Manali
-	      										<br>
-	      										<span class="subtext">Himachal Pradesh</span>
-	      									</div>
-	      								</div>
-	      							</div>
-	      						</div>
-	      						<div class="col-lg-4 col-6 destination mt-1">
-	      							<img src="images/travel5.jpg">
-	      							<div class="overlay">
-	      								<div class="w-100 h-100 pl-3 pt-1">
-	      									<div class="text">
-	      										Munnar
-	      										<br>
-	      										<span class="subtext">Kerala</span>
-	      									</div>
-	      								</div>
-	      							</div>
-	      						</div>
-	      						<div class="col-lg-4 col-6 destination mt-1">
-	      							<img src="images/travel6.jpg">
-	      							<div class="overlay">
-	      								<div class="w-100 h-100 pl-3 pt-1">
-	      									<div class="text">
-	      										Rameswaram
-	      										<br>
-	      										<span class="subtext">Tamil Nadu</span>
-	      									</div>
-	      								</div>
-	      							</div>
-	      						</div>
--->
+	      							<p class="d-flex justify-content-center person-designation">Travel Expert (Gujarat)</p></div>
+	      					    </div>
+                                
+                                <div class="col-lg-3 col-6 team-div p-0">
+	      							<img src="images/travel.jpg" class="d-flex justify-content-center">
+	      							<div style="color:white;" class="mt-3"><p class="d-flex justify-content-center person-name">Swati Singhal</p>
+	      							
+	      							<p class="d-flex justify-content-center person-designation">Travel Expert (Ladakh / Kerala / Karnataka / Kashmir)</p></div>
+	      					    </div>
+                                
+                                <div class="col-lg-3 col-6 team-div p-0">
+	      							<img src="images/travel.jpg" class="d-flex justify-content-center">
+	      							<div style="color:white;" class="mt-3"><p class="d-flex justify-content-center person-name">Muskan Bareja</p>
+	      							
+	      							<p class="d-flex justify-content-center person-designation">Travel Expert (Kerala / Karnataka)</p></div>
+	      					    </div>
+                                 
+                                   						
 	      					</div>
 	    				</div>
-	    				<div class="carousel-item">
+                      
+                      
+                      <div class="carousel-item ">
 	      					<div class="row">
-	      						<div class="col-lg-4 col-6 destination">
-	      							<img src="images/travel.jpg">
-	      							<div class="overlay">
-	      								<div class="w-100 h-100 pl-3 pt-1">
-	      									<div class="text">
-	      										Kutch
-	      										<br>
-	      										<span class="subtext">Gujarat</span>
-	      									</div>
-	      								</div>
-	      							</div>
-	      						</div>
-	      						<div class="col-lg-4 col-6 destination">
-	      							<img src="images/travel1.jpg">
-	      							<div class="overlay">
-	      								<div class="w-100 h-100 pl-3 pt-1">
-	      									<div class="text">
-	      										Anjuna Beach
-	      										<br>
-	      										<span class="subtext">Goa</span>
-	      									</div>
-	      								</div>
-	      							</div>
-	      						</div>
-	      						<div class="col-lg-4 col-6 destination">
-	      							<img src="images/travel3.jpg">
-	      							<div class="overlay">
-	      								<div class="w-100 h-100 pl-3 pt-1">
-	      									<div class="text">
-	      										Udaipur
-	      										<br>
-	      										<span class="subtext">Rajasthan</span>
-	      									</div>
-	      								</div>
-	      							</div>
-	      						</div>
-	      						<div class="col-lg-4 col-6 destination mt-1">
-	      							<img src="images/travel4.jpg">
-	      							<div class="overlay">
-	      								<div class="w-100 h-100 pl-3 pt-1">
-	      									<div class="text">
-	      										Manali
-	      										<br>
-	      										<span class="subtext">Himachal Pradesh</span>
-	      									</div>
-	      								</div>
-	      							</div>
-	      						</div>
-	      						<div class="col-lg-4 col-6 destination mt-1">
-	      							<img src="images/travel5.jpg">
-	      							<div class="overlay">
-	      								<div class="w-100 h-100 pl-3 pt-1">
-	      									<div class="text">
-	      										Munnar
-	      										<br>
-	      										<span class="subtext">Kerala</span>
-	      									</div>
-	      								</div>
-	      							</div>
-	      						</div>
-	      						<div class="col-lg-4 col-6 destination mt-1">
-	      							<img src="images/travel6.jpg">
-	      							<div class="overlay">
-	      								<div class="w-100 h-100 pl-3 pt-1">
-	      									<div class="text">
-	      										Rameswaram
-	      										<br>
-	      										<span class="subtext">Tamil Nadu</span>
-	      									</div>
-	      								</div>
-	      							</div>
-	      						</div>
+	      					
+	      						<div class="col-lg-3 col-6 team-div p-0">
+	      							<img src="images/travel.jpg" class="d-flex justify-content-center">
+	      							<div style="color:white;" class="mt-3"><p class="d-flex justify-content-center person-name">Anshika Singla</p>
+	      							
+	      							<p class="d-flex justify-content-center person-designation">Marketing Head</p></div>
+	      					    </div>
+                                
+                                <div class="col-lg-3 col-6 team-div p-0">
+	      							<img src="images/travel.jpg" class="d-flex justify-content-center">
+	      							<div style="color:white;" class="mt-3"><p class="d-flex justify-content-center person-name">Monika Gupta</p>
+	      							
+	      							<p class="d-flex justify-content-center person-designation">Travel Expert (Himachal Pradesh / Uttarakhand)</p></div>
+	      					    </div>
+                                
+<!--
+                                <div class="col-lg-3 col-6 team-div p-0">
+	      							<img src="images/travel.jpg" class="d-flex justify-content-center">
+	      							<div style="color:white;" class="mt-3"><p class="d-flex justify-content-center person-name">Gaganpreet Arora</p>
+	      							
+	      							<p class="d-flex justify-content-center person-designation">Travel Expert (Gujarat)</p></div>
+	      					    </div>
+-->
+                                 
+                                   						
 	      					</div>
 	    				</div>
+                       
+
   					</div>
   					<div class="row d-flex mt-5 align-items-center justify-content-center">
   						<a href="#carouselExample" role="button" data-slide="prev">

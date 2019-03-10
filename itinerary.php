@@ -28,6 +28,7 @@ $id = $_GET['pkg_id'];
                 $package=mysqli_query($con,"select * from travelpackages WHERE package_id = '".$id."'");
                 $inclusions =mysqli_query($con,"select * from inclusion WHERE package_id = '".$id."'");
              $exclusions =mysqli_query($con,"select * from exclusion WHERE package_id = '".$id."'");
+            $hotels =mysqli_query($con,"select * from hotels WHERE package_id = '".$id."'");
             
                 $numrows = mysqli_num_rows($package);
                 while($sub_row=mysqli_fetch_assoc($package)){
@@ -70,25 +71,32 @@ $id = $_GET['pkg_id'];
             
                     
          <div class="row w-100 text-white d-flex justify-content-center MT-5 mb-5"> 
-                <div class="col-8 w-100 p-0 ">
+                <div class="col-8 w-100 p-0 d-flex justify-content-center">
                    
                   
- <ul class="nav nav-pills mb-3 float-left" id="pills-tab" role="tablist">
-  <li class="nav-item mr-5">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-itinerary" role="tab" aria-controls="pills-home" aria-selected="true">ITINERARY</a>
-  </li>
-  <li class="nav-item mr-5">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-inclusion" role="tab" aria-controls="pills-profile" aria-selected="false">INCLUSIONS</a>
-  </li>
-  <li class="nav-item mr-5">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-exclusion" role="tab" aria-controls="pills-contact" aria-selected="false">EXCLUSIONS</a>
-  </li>
-   <li class="nav-item mr-5">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-hotel" role="tab" aria-controls="pills-contact" aria-selected="false">HOTELS</a>
-  </li>
-</ul>
+                     <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+                      <li class="nav-item mr-5">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-itinerary" role="tab" aria-controls="pills-home" aria-selected="true">ITINERARY</a>
+                      </li>
+                      <li class="nav-item mr-5">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-inclusion" role="tab" aria-controls="pills-profile" aria-selected="false">INCLUSIONS</a>
+                      </li>
+                      <li class="nav-item mr-5">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-exclusion" role="tab" aria-controls="pills-contact" aria-selected="false">EXCLUSIONS</a>
+                      </li>
+                       <li class="nav-item mr-5">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-hotel" role="tab" aria-controls="pills-contact" aria-selected="false">HOTELS</a>
+                      </li>
+                    </ul>
 
 
+                </div>
+                
+                <div class="col-4">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12"><button class="btn it-btn btnsubmit  float-right justify-content-center mr-5 pl-4 pr-4" type="submit">Customize</button></div>
+                    <div class="col-12"><button class="btn it-btn btnsubmit float-right justify-content-center pl-4 pr-4 mt-3 mr-5" type="submit">Book Now</button></div>
+                </div>
                 </div>
             </div>
 
@@ -132,16 +140,28 @@ $id = $_GET['pkg_id'];
     while($inc=mysqli_fetch_assoc($inclusions)){
             
             ?>
-  <div class="tab-pane fade" id="pills-inclusion" role="tabpanel" aria-labelledby="pills-profile-tab"><?php echo $inc['inclusion']; ?></div> <?php }?>
+  <div class="tab-pane fade ml-3" id="pills-inclusion" role="tabpanel" aria-labelledby="pills-profile-tab"><?php echo $inc['inclusion']; ?></div> <?php }?>
   
    <?php 
     
     while($exc=mysqli_fetch_assoc($exclusions)){
             
             ?>
-  <div class="tab-pane fade" id="pills-exclusion" role="tabpanel" aria-labelledby="pills-contact-tab"><?php echo $exc['exclusion']; ?></div> <?php }?>
+  <div class="tab-pane fade ml-3" id="pills-exclusion" role="tabpanel" aria-labelledby="pills-contact-tab"><?php echo $exc['exclusion']; ?></div> <?php }?>
   
-  <div class="tab-pane fade" id="pills-hotel" role="tabpanel" aria-labelledby="pills-contact2-tab">Hotels Package Type</div>
+    <?php 
+    while($hotel=mysqli_fetch_assoc($hotels)){
+            
+            ?>
+  <div class="tab-pane fade ml-3" id="pills-hotel" role="tabpanel" aria-labelledby="pills-contact2-tab">
+  <p><span class="hotel-head">Hotel Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hotel-detail"><?php echo $hotel['hotel_name']; ?></span></p>
+ <p><span class="hotel-head">Hotel Category : </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hotel-detail"><?php echo $hotel['hotel_category']; ?></span></p>
+    <p><span class="hotel-head">Hotel Address &nbsp;&nbsp;: </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hotel-detail"><?php echo $hotel['hotel_place']; ?></span></p>
+  
+  
+  </div>
+  
+  <?php } ?>
 </div>
 
             <!-- google reviews section -->
