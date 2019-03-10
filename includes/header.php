@@ -1,7 +1,7 @@
 <div class="row bgpink text-white upper-header fix-pos w-100">
 	   	        <div class="col-12 col-lg-6 offset-lg-6 pt-2 pb-2 pl-1 pr-1 text-center d-flex align-items-center justify-content-center">
 	   	        	<div class="about-us-link p-1 mr-lg-3 pl-2 pr-2 d-lg-block d-none">
-	   	        		<a href="">ABOUT US</a>
+	   	        		<a href="aboutus.php">ABOUT US</a>
 	   	        	</div>
 	   	        	<div class="upper-header-logo p-1 d-lg-block d-none"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
 	   	        	<div class="upper-header-logo p-1 ml-lg-3 ml-1 d-lg-block d-none"><a href="#"><i class="fab fa-youtube"></i></a></div>
@@ -35,7 +35,7 @@
 			                {
 			                ?>
 			                	<li class="dropdown-item dropdown mb-1" id="dropdown1-1">
-			                		<a href="#" class="dropdown-toggle" id="dropdown1-1" aria-haspopup="true" aria-expanded="false">
+			                		<a href="router.php?name=<?php echo htmlentities($row['name']); ?>&id=<?php echo htmlentities($row['id']); ?>" class="dropdown-toggle" id="dropdown1-1" aria-haspopup="true" aria-expanded="false">
 			                			<i class="fa fa-chevron-right mr-2"></i>
 			                			<?php echo htmlentities($row['name']); ?>
 			                		</a>
@@ -67,7 +67,7 @@
 			                <a class="nav-link" href="#" target="_blank">Team</a>
 			            </li>
 			            <li class="nav-item mr-2">
-			                <a class="nav-link disabled" href="#">Testimonial</a>
+			                <a class="nav-link" href="testimonial.php" target="_blank">Testimonial</a>
 			            </li>
 			            <li class="nav-item mr-2">
 			                <a class="nav-link disabled" href="#">Blogs</a>
