@@ -64,7 +64,7 @@ window.onscroll = function(){
 
 $(document).ready(function () {
 
-    $('.navbar .dropdown-item').on('click', function (e) {
+    $('.navbar .dropdown-item').hover(function (e) {
         var $el = $(this).children('.dropdown-toggle');
         var $parent = $el.offsetParent(".dropdown-menu");
         $(this).parent("li").toggleClass('open');
