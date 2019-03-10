@@ -48,7 +48,7 @@
                                         	<?php
                                         	while($sub_row=mysqli_fetch_assoc($subcategory)){
                                         	?>
-                                        	<li class="dropdown-item mb-1" href="#"><a><?php
+                                        	<li class="dropdown-item mb-1"><a href="router.php?name=<?php echo htmlentities($row['name']); ?>&id=<?php echo htmlentities($row['id']); ?>"><?php
                                         	echo htmlentities($sub_row['subdestination_name']);
                                         	?></a></li>
                                         	<?php	
@@ -67,7 +67,7 @@
 			                <a class="nav-link" href="#" target="_blank">Team</a>
 			            </li>
 			            <li class="nav-item mr-2">
-			                <a class="nav-link" href="testimonial.php" target="_blank">Testimonial</a>
+			                <a class="nav-link" href="testimonial.php">Testimonial</a>
 			            </li>
 			            <li class="nav-item mr-2">
 			                <a class="nav-link disabled" href="#">Blogs</a>
