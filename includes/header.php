@@ -34,9 +34,9 @@
 			                while($row=mysqli_fetch_assoc($category))
 			                {
 			                ?>
-			                	<li class="dropdown-item dropdown mb-1" id="dropdown1-1">
+			                	<li class="dropdown-item dropdown mb-2" id="dropdown1-1">
 			                		<a href="router.php?name=<?php echo htmlentities($row['name']); ?>&id=<?php echo htmlentities($row['id']); ?>" class="dropdown-toggle" id="dropdown1-1" aria-haspopup="true" aria-expanded="false">
-			                			<i class="fa fa-chevron-right mr-2"></i>
+			                			<i class="fa fa-chevron-right mr-2" style="font-size: 8px;"></i>
 			                			<?php echo htmlentities($row['name']); ?>
 			                		</a>
 			                			<?php
@@ -44,20 +44,26 @@
                                         $subrows = mysqli_num_rows($subcategory);
                                         if($subrows>0){
                                         	?>
-                                        	<ul class="dropdown-menu submenu-dark" aria-labelledby="dropdown1-1" style="z-index:999;">
-                                        	<?php
-                                        	while($sub_row=mysqli_fetch_assoc($subcategory)){
-                                        	?>
-                                        	<li class="dropdown-item mb-1"><a href="router.php?name=<?php echo htmlentities($row['name']); ?>&id=<?php echo htmlentities($row['id']); ?>"><?php
+
+                                        	<div class="row dropdown-menu submenu-dark" style="z-index:999; width: 400px;">
+                                        		<?php
+                                        		while($sub_row=mysqli_fetch_assoc($subcategory)){
+                                        		?>
+                                        		<div class="col-4 float-left">
+                                        		<i class="far fa-square mr-2" style="font-size: 6px;"></i>
+                                        		<a href="router.php?name=<?php echo htmlentities($row['name']); ?>&id=<?php echo htmlentities($row['id']); ?>"><?php
                                         	echo htmlentities($sub_row['subdestination_name']);
-                                        	?></a></li>
+                                        		?></a>
+                                        		</div>
                                         	<?php	
-                                        	}
-                                        ?>
-                                    		</ul>
-                                        <?php
-                                        }
-			                			?>	
+                                        		}
+                                        	?>			
+                                        		
+                                        	</div>
+                                        	<?php
+                                        		}
+			                				?>
+                                        	
 			                	</li>
 			            	<?php } ?>
 			            	</ul>

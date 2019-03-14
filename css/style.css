@@ -315,7 +315,7 @@ input.transparent-input{
 */
 
 .dropdown-menu{
-    width: 100%;
+    /*width: 100%;*/
     background: rgba(34, 34, 34,0.9);
     max-height: 300px;
     color: #fff;
@@ -330,6 +330,7 @@ input.transparent-input{
 }
 .submenu-dark{
     background: rgba(34, 34, 34,1) !important;
+    font-size: 10px;
 }
 /*
 .dropdown-menu>a{

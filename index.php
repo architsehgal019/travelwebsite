@@ -16,11 +16,7 @@ include('includes/config.php');
         <link rel="stylesheet" href="https://cdn.rawgit.com/stevenmonson/googleReviews/master/google-places.css">
 		<!-- link for css stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-
-
-
 		<link rel="stylesheet" href="css/google-places.css" type="text/css">
-		
 		
 		<title>Kahin bhi ghoomlo</title>
 	</head>
