@@ -304,7 +304,7 @@ include('includes/config.php');
 						});
 					});
 				</script>
-
+				<div class="col-12"><a href="https://www.google.co.in/search?ei=VcGIXLKkC8aV1fAPuqe7mAo&q=kbg+holidays+pvt+ltd&oq=kbg+holidays&gs_l=psy-ab.3..0j38.278474.283058..284366...2.0..3.1183.9387.4-4j4j1j4......0....1..gws-wiz.....0..0i71j0i67j0i10j0i22i10i30j0i22i30.V9eKIlO8Ops#lrd=0x390d04bf1c300001:0x5a1d2f06c1e37293,1,,," class="btn btn-outline-secondary">View All</a></div>
 			</div>
 			<hr class="divider">
 
